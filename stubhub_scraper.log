@@ -1,0 +1,126 @@
+2025-01-12 05:01:43,841 - INFO - === Starting StubHub Scraper ===
+2025-01-12 05:01:45,944 - INFO - Navigating to StubHub login page...
+2025-01-12 05:01:53,334 - INFO - Waiting for user to complete manual login...
+2025-01-12 05:02:31,782 - INFO - Login detected. Resuming script execution.
+2025-01-12 05:02:31,782 - INFO - Navigating to 'Sell Tickets' page.
+2025-01-12 05:02:38,292 - INFO - Arrived at Sell page.
+2025-01-12 05:02:38,292 - INFO - Searching for location: capital one arena
+2025-01-12 05:02:38,292 - INFO - Attempting to close any pop-ups.
+2025-01-12 05:02:38,348 - INFO - No captcha detected.
+2025-01-12 05:02:38,411 - INFO - Search input found. Interacting with it.
+2025-01-12 05:02:45,604 - INFO - Location 'capital one arena' searched successfully.
+2025-01-12 05:02:45,643 - INFO - Navigating to 'Parking' tab.
+2025-01-12 05:02:45,713 - INFO - 'Parking' tab found. Clicking it.
+2025-01-12 05:02:48,885 - INFO - Successfully navigated to 'Parking' tab.
+2025-01-12 05:02:48,885 - INFO - Starting to scrape event details.
+2025-01-12 05:02:49,001 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-12 05:02:49,050 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-12 05:02:49,081 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-12 05:02:49,126 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-12 05:02:49,212 - INFO - Scraped event: {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:49,335 - INFO - Scraped event: {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:49,446 - INFO - Scraped event: {'date': 'JAN 13', 'time': 'MON', 'name': 'PARKING PASSES ONLY Minnesota Timberwolves at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:49,573 - INFO - Scraped event: {'date': 'JAN 14', 'time': 'TUE', 'name': 'PARKING PASSES ONLY Anaheim Ducks at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:49,670 - INFO - Scraped event: {'date': 'JAN 16', 'time': 'THU', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:49,747 - INFO - Scraped event: {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:49,873 - INFO - Scraped event: {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-12 05:02:49,999 - INFO - Scraped event: {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:50,095 - INFO - Scraped event: {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-12 05:02:50,209 - INFO - Scraped event: {'date': 'JAN 19', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-12 05:02:50,332 - INFO - Scraped event: {'date': 'JAN 24', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:50,474 - INFO - Scraped event: {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:50,650 - INFO - Scraped event: {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:50,758 - INFO - Scraped event: {'date': 'JAN 26', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:50,900 - INFO - Scraped event: {'date': 'JAN 28', 'time': 'TUE', 'name': "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)", 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:50,996 - INFO - Scraped event: {'date': 'JAN 29', 'time': 'WED', 'name': 'PARKING PASSES ONLY Toronto Raptors at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:51,075 - INFO - Scraped event: {'date': 'JAN 30', 'time': 'THU', 'name': 'PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:51,203 - INFO - Scraped event: {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:51,306 - INFO - Scraped event: {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-12 05:02:51,376 - INFO - Scraped event: {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-12 05:02:51,456 - INFO - Scraped event: {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Winnipeg Jets at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-12 05:02:51,491 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-12 05:02:51,491 - INFO - Total events scraped: 26
+2025-01-12 05:02:51,502 - INFO - Scraped 26 events: [{'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 13', 'time': 'MON', 'name': 'PARKING PASSES ONLY Minnesota Timberwolves at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 14', 'time': 'TUE', 'name': 'PARKING PASSES ONLY Anaheim Ducks at Washington Capitals', 'location': 'Washington, DC, USA'}, {'date': 'JAN 16', 'time': 'THU', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}, {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}, {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}, {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}, {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}, {'date': 'JAN 19', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}, {'date': 'JAN 24', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 26', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 28', 'time': 'TUE', 'name': "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)", 'location': 'Washington, DC, USA'}, {'date': 'JAN 29', 'time': 'WED', 'name': 'PARKING PASSES ONLY Toronto Raptors at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 30', 'time': 'THU', 'name': 'PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)', 'location': 'Washington, DC, USA'}, {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}, {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}, {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Winnipeg Jets at Washington Capitals', 'location': 'Washington, DC, USA'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}]
+2025-01-12 05:02:51,502 - INFO - Attempting to interact with event at index 9.
+2025-01-12 05:02:51,699 - INFO - Clicked on the event at index 9.
+2025-01-12 05:02:51,729 - INFO - Switched to the new window/tab.
+2025-01-12 05:02:56,565 - INFO - Selected 1 ticket from the dropdown.
+2025-01-12 05:02:56,816 - INFO - Clicked the first Continue button.
+2025-01-12 05:02:58,800 - INFO - Clicked the second Continue button.
+2025-01-12 05:03:00,750 - INFO - Selected E-Tickets.
+2025-01-12 05:03:01,045 - INFO - Selected 'I'll upload later' option.
+2025-01-12 05:03:01,295 - INFO - Clicked the final Continue button.
+2025-01-12 05:03:01,295 - INFO - Interacting with the 'Where are your seats?' dropdown.
+2025-01-12 05:03:03,978 - INFO - Dropdown located.
+2025-01-12 05:03:04,215 - INFO - Clicked on the dropdown arrow to reveal options.
+2025-01-12 05:03:06,353 - INFO - Extracted dropdown labels: ['2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi\n33 K St. NW - 0.7 mi from venue - Within 0.75 mi\n72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi\n81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi\n98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi\n116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi\n123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi\n135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi\n140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi\n144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi\n425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi\n455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi\n524 11th St NW 0.5 mi from venue - Within 0.5 mi\n532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi\n560 8th St NW - 0.1 mi from venue - Within 0.25 mi\n573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi\n600 E St. NW - 0.1 mi from venue - Within 0.25 mi\n600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi\n601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi\n608 10th St NW - 0.3 mi from venue - Within 0.5 mi\n609 10th St NW - 0.3 mi from venue - Within 0.5 mi\n612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi\n625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi\n650 Mass Ave - 0.2 mi from venue - Within 0.25 mi\n716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi\n732 6th St. NW - 0.1 mi from venue - Within 0.25 mi\n818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi\n900 G St. NW Garage - Within 0.25 mi\n901 5th St. NW - 0.3 mi from venue - Within 0.5 mi\n901 7th St. NW - Within 0.25 mi\n901 E Street NW - 0.2 mi from venue - Within 0.25 mi\n909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi\n916 H St. NW - 0.2 mi from venue - Within 0.25 mi\n1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi\n1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi\n1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi\n1441 L St NW - 0.8 mi from venue - Within 1.0 mi\n1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi\n1602 L St. NW - 0.9 mi from venue - Within 1.0 mi\n1620 I St NW - 0.9 mi from venue - Within 1.0 mi\nCapital One Arena Garage - Arena Parking Garage\nCourtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi\nGallery Place 6th St NW - Within 0.25 mi\nHilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi\nHotel Monaco - 0.1 mi from venue - Within 0.25 mi\nLoews Madison Hotel - 0.9 mi from venue - Within 1.0 mi\nMarket Square - 0.2 mi from venue - Within 0.25 mi\nRenaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi\nThe Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi\nWashington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi\nWashington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi\nWashington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi', '2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi', '33 K St. NW - 0.7 mi from venue - Within 0.75 mi', '72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi', '81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi', '98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi', '116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi', '123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi', '135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi', '140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi', '144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi', '425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi', '455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi', '524 11th St NW 0.5 mi from venue - Within 0.5 mi', '532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi', '560 8th St NW - 0.1 mi from venue - Within 0.25 mi', '573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi', '600 E St. NW - 0.1 mi from venue - Within 0.25 mi', '600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi', '601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi', '608 10th St NW - 0.3 mi from venue - Within 0.5 mi', '609 10th St NW - 0.3 mi from venue - Within 0.5 mi', '612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi', '625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi', '650 Mass Ave - 0.2 mi from venue - Within 0.25 mi', '716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi', '732 6th St. NW - 0.1 mi from venue - Within 0.25 mi', '818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi', '900 G St. NW Garage - Within 0.25 mi', '901 5th St. NW - 0.3 mi from venue - Within 0.5 mi', '901 7th St. NW - Within 0.25 mi', '901 E Street NW - 0.2 mi from venue - Within 0.25 mi', '909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi', '916 H St. NW - 0.2 mi from venue - Within 0.25 mi', '1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi', '1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi', '1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi', '1441 L St NW - 0.8 mi from venue - Within 1.0 mi', '1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi', '1602 L St. NW - 0.9 mi from venue - Within 1.0 mi', '1620 I St NW - 0.9 mi from venue - Within 1.0 mi', 'Capital One Arena Garage - Arena Parking Garage', 'Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi', 'Gallery Place 6th St NW - Within 0.25 mi', 'Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi', 'Hotel Monaco - 0.1 mi from venue - Within 0.25 mi', 'Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi', 'Market Square - 0.2 mi from venue - Within 0.25 mi', 'Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi', 'The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi', 'Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi', 'Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi', 'Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi']
+2025-01-12 05:03:06,594 - INFO - Selected the first option: 2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi
+33 K St. NW - 0.7 mi from venue - Within 0.75 mi
+72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi
+81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi
+98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi
+116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi
+123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi
+135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi
+140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi
+425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi
+455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi
+524 11th St NW 0.5 mi from venue - Within 0.5 mi
+532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+560 8th St NW - 0.1 mi from venue - Within 0.25 mi
+573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+600 E St. NW - 0.1 mi from venue - Within 0.25 mi
+600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi
+601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi
+608 10th St NW - 0.3 mi from venue - Within 0.5 mi
+609 10th St NW - 0.3 mi from venue - Within 0.5 mi
+612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi
+625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi
+650 Mass Ave - 0.2 mi from venue - Within 0.25 mi
+716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi
+732 6th St. NW - 0.1 mi from venue - Within 0.25 mi
+818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi
+900 G St. NW Garage - Within 0.25 mi
+901 5th St. NW - 0.3 mi from venue - Within 0.5 mi
+901 7th St. NW - Within 0.25 mi
+901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi
+916 H St. NW - 0.2 mi from venue - Within 0.25 mi
+1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi
+1441 L St NW - 0.8 mi from venue - Within 1.0 mi
+1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi
+1602 L St. NW - 0.9 mi from venue - Within 1.0 mi
+1620 I St NW - 0.9 mi from venue - Within 1.0 mi
+Capital One Arena Garage - Arena Parking Garage
+Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi
+Gallery Place 6th St NW - Within 0.25 mi
+Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi
+Hotel Monaco - 0.1 mi from venue - Within 0.25 mi
+Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi
+Market Square - 0.2 mi from venue - Within 0.25 mi
+Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi
+The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi
+Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi
+Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi
+Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi
+2025-01-12 05:03:06,830 - INFO - Clicked the 'Continue' button.
+2025-01-12 05:03:06,830 - INFO - Interacting with the ticket price page.
+2025-01-12 05:03:10,324 - INFO - Extracted per ticket price: US$ 15
+2025-01-12 05:03:10,387 - INFO - Clicking on 'Compare similar tickets'.
+2025-01-12 05:03:10,749 - INFO - Switched to new window/tab opened by the link.
+2025-01-12 05:03:20,516 - INFO - Listings container loaded successfully.
+2025-01-12 05:03:20,807 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $10, 1 pass, 10.0, Amazing
+2025-01-12 05:03:20,950 - INFO - Scraped listing: Parking within 1.2 mi from venue, $11, 1 pass, , 
+2025-01-12 05:03:21,930 - INFO - Scraped listing: 72 - 975 F St. NW - 0.2 mi from venue, $12, 1 pass, 8.4, Great
+2025-01-12 05:03:22,049 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-12 05:03:22,184 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-12 05:03:22,310 - INFO - Scraped listing: CARROLL SQUARE GARAGE - 0.3 MI AWAY, $13, 1 pass, , 
+2025-01-12 05:03:22,486 - INFO - Scraped listing: 116 - 733 10th St. NW - 0.3 mi from venue, $14, 1 pass, 9.1, Amazing
+2025-01-12 05:03:24,508 - INFO - Total listings scraped: 7
+2025-01-12 05:03:24,508 - INFO - Writing data to CSV: stubhub_output.csv
+2025-01-12 05:03:24,524 - INFO - Wrote 7 rows to CSV: stubhub_output.csv
+2025-01-12 05:03:24,524 - INFO - Closing browser.
+2025-01-12 05:03:26,987 - INFO - === StubHub Scraper Finished ===
