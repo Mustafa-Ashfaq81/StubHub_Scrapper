@@ -35,6 +35,9 @@ LOCATION_TO_SEARCH = "capital one arena"
 DEFAULT_TIMEOUT = 20
 OUTPUT_CSV_FILE = "stubhub_output.csv"
 
+# Decide how many events to scrape before stopping (for testing/progress)
+MAX_EVENTS_TO_SCRAPE = 8
+
 ####################################################################
 # Utility Functions
 ####################################################################
@@ -80,7 +83,7 @@ def main():
     logging.info("=== Starting StubHub Scraper ===")
 
     options = webdriver.ChromeOptions()
-    # Uncomment for headless mode if desired:
+    # Uncomment if you prefer headless mode:
     # options.add_argument("--headless")
 
     service = ChromeService()
@@ -96,40 +99,93 @@ def main():
         search_location(driver, LOCATION_TO_SEARCH)
         navigate_to_parking_tab(driver)
 
-        events = scrape_events(driver)
-        logging.info(f"Scraped {len(events)} events: {events}")
+        # SCRAPE EVENTS TWICE:
+        # 1) Immediately after landing on the page
+        events_first_pass = scrape_events(driver)
+        # 2) After waiting a few seconds for the page to possibly reload/refresh
+        time.sleep(5)  # Adjust as needed
+        events_second_pass = scrape_events(driver)
+        
+        # Combine them
+        combined_events = events_first_pass + events_second_pass
 
-        # Interact with the 7th event (index 6)
-        interact_with_event(driver, event_index=8)
+        # Deduplicate events based on unique fields (e.g., name, date, location)
+        unique_events = list({f"{e['name']}_{e['date']}_{e['location']}": e for e in combined_events}.values())
 
-        # Store details of the selected event
-        selected_event = events[8] if len(events) > 8 else {}
+        logging.info(f"Scraped first pass: {len(events_first_pass)} events, "
+                     f"second pass: {len(events_second_pass)} events, "
+                     f"combined: {len(unique_events)} events total.")
 
-        seats = interact_with_seat_dropdown(driver)
-        selected_seat = seats[0] if seats else ""
+        # Remove events that appear to be placeholders (N/A)
+        filtered_events = [
+            e for e in unique_events
+            if not (e["date"] == "N/A" and e["time"] == "N/A" and e["name"] == "N/A" and e["location"] == "N/A")
+        ]
+        if not filtered_events:
+            logging.warning("No valid events to process after filtering. Exiting.")
+            return
+        logging.info(f"Filtered out N/A events. Remaining unique events: {len(filtered_events)}")
 
-        per_ticket_price, listings = interact_with_ticket_price_page(driver)
-
-        # Combine data into a final list of rows for CSV
         final_data = []
-        for listing in listings:
-            row = {
-                "event_date": selected_event.get("date", ""),
-                "event_time": selected_event.get("time", ""),
-                "event_name": selected_event.get("name", ""),
-                "event_location": selected_event.get("location", ""),
-                "selected_seat": selected_seat,
-                "per_ticket_price": per_ticket_price,
-                "listing_title": listing.get("title", ""),
-                "listing_price": listing.get("price", ""),
-                "listing_passes": listing.get("passes", ""),
-                "listing_rating_score": listing.get("rating_score", ""),
-                "listing_rating_label": listing.get("rating_label", ""),
-            }
-            final_data.append(row)
+        original_window = driver.current_window_handle  # keep track of the main tab
 
-        # Write the combined data to CSV
-        write_data_to_csv(final_data, OUTPUT_CSV_FILE)
+        for idx, event_info in enumerate(filtered_events):
+            if idx >= MAX_EVENTS_TO_SCRAPE:
+                logging.info(f"Reached the maximum of {MAX_EVENTS_TO_SCRAPE} events. Stopping early.")
+                break
+
+            logging.info(f"=== Processing event {idx+1}/{len(filtered_events)} ===")
+            
+            success = interact_with_event_and_select_tickets(
+                driver, event_index=idx, original_window=original_window
+            )
+            
+            if not success:
+                logging.warning(f"Event at index {idx} could not be opened or processed. Skipping seat scraping.")
+                continue
+
+            # Now we are in the new tab if success is True. Attempt seat scraping:
+            all_seat_labels = get_all_seats_labels(driver)
+            logging.info(f"Found {len(all_seat_labels)} seats for event {idx+1}.")
+
+            for seat_idx, seat_label in enumerate(all_seat_labels):
+                logging.info(f"Selecting seat {seat_idx+1}/{len(all_seat_labels)}: '{seat_label}'")
+                seat_success = select_seat_in_dropdown(driver, seat_idx)
+                if not seat_success:
+                    logging.warning(f"Could not select seat index {seat_idx}. Skipping.")
+                    continue
+
+                # Now scrape ticket price & listings
+                per_ticket_price, listings = interact_with_ticket_price_page(driver)
+                if not listings or per_ticket_price is None:
+                    logging.warning(f"No listings found or ticket price missing for seat '{seat_label}'")
+                    continue
+
+                for listing in listings:
+                    row = {
+                        "event_date": event_info.get("date", ""),
+                        "event_time": event_info.get("time", ""),
+                        "event_name": event_info.get("name", ""),
+                        "event_location": event_info.get("location", ""),
+                        "selected_seat": seat_label,
+                        "per_ticket_price": per_ticket_price,
+                        "listing_title": listing.get("title", ""),
+                        "listing_price": listing.get("price", ""),
+                        "listing_passes": listing.get("passes", ""),
+                        "listing_rating_score": listing.get("rating_score", ""),
+                        "listing_rating_label": listing.get("rating_label", ""),
+                    }
+                    final_data.append(row)
+
+            # Finished seat scraping for this event. Close this new tab & return to the main listing
+            if len(driver.window_handles) > 1 and driver.current_window_handle != original_window:
+                driver.close()
+            driver.switch_to.window(original_window)
+            time.sleep(1)  # small pause
+
+            # Write partial data so we can see progress
+            write_data_to_csv(final_data, OUTPUT_CSV_FILE)
+            logging.info(f"Finished scraping event {idx+1}. Data so far saved to {OUTPUT_CSV_FILE}.\n")
 
     except Exception as e:
         logging.error(f"Main script error: {str(e)}", exc_info=True)
@@ -152,9 +208,8 @@ def wait_for_manual_login(driver, timeout=300):
     print(f"You have {timeout // 60} minutes to complete the login.")
 
     try:
-        # Wait until a specific element that indicates login success is present
         WebDriverWait(driver, timeout).until(
-            EC.presence_of_element_located((By.XPATH, "//a[contains(text(), 'Sell')]"))  # Example: "Sell" button appears
+            EC.presence_of_element_located((By.XPATH, "//a[contains(text(), 'Sell')]"))
         )
         logging.info("Login detected. Resuming script execution.")
         print("Login successful. Resuming automated tasks.")
@@ -177,7 +232,7 @@ def close_popups(driver):
 
     # Check for captcha
     try:
-        captcha_frame = driver.find_element(By.XPATH, "//iframe[contains(@src, 'captcha')]")
+        driver.find_element(By.XPATH, "//iframe[contains(@src, 'captcha')]")
         logging.error("Captcha detected. Cannot proceed.")
     except NoSuchElementException:
         logging.info("No captcha detected.")
@@ -200,16 +255,13 @@ def search_location(driver, location_query):
     """
     logging.info(f"Searching for location: {location_query}")
     try:
-        # Ensure pop-ups are closed
         close_popups(driver)
 
-        # Wait for the search input
         search_input = WebDriverWait(driver, DEFAULT_TIMEOUT * 2).until(
             EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search your event and start selling']"))
         )
         logging.info("Search input found. Interacting with it.")
 
-        # Clear and send the search query
         search_input.clear()
         search_input.send_keys(location_query)
         search_input.send_keys(Keys.ENTER)
@@ -218,7 +270,6 @@ def search_location(driver, location_query):
 
     except TimeoutException as e:
         logging.error(f"Error searching location: {e}. Saving debug information.")
-        # Save page source and screenshot for debugging
         with open("debug_page_source.html", "w", encoding="utf-8") as f:
             f.write(driver.page_source)
         driver.save_screenshot("debug_screenshot.png")
@@ -232,13 +283,12 @@ def navigate_to_parking_tab(driver):
     """
     logging.info("Navigating to 'Parking' tab.")
     try:
-        # Wait for the 'Parking' tab to be clickable
         parking_tab = WebDriverWait(driver, DEFAULT_TIMEOUT).until(
             EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Parking')]"))
         )
         logging.info("'Parking' tab found. Clicking it.")
         parking_tab.click()
-        time.sleep(3)  # Allow time for the page to load
+        time.sleep(3)
         logging.info("Successfully navigated to 'Parking' tab.")
     except TimeoutException as e:
         logging.error(f"Error navigating to 'Parking' tab: {e}.")
@@ -252,11 +302,9 @@ def scrape_events(driver):
     """
     logging.info("Starting to scrape event details.")
     try:
-        # Wait until the container that holds events is present
         WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.CLASS_NAME, "sc-1pn28cb-0"))
         )
-        # Locate all event cards
         event_cards = driver.find_elements(By.CLASS_NAME, "sc-1or4et4-0")
         if not event_cards:
             logging.warning("No events found on the page.")
@@ -265,10 +313,8 @@ def scrape_events(driver):
         scraped_events = []
         for index, card in enumerate(event_cards):
             try:
-                # Initialize defaults
                 date = time_text = name = location = "N/A"
 
-                # Try extracting using known classes; if not found, retain default
                 try:
                     date = card.find_element(By.CLASS_NAME, "sc-yi86cf-2").text
                 except NoSuchElementException:
@@ -299,7 +345,7 @@ def scrape_events(driver):
                 logging.info(f"Scraped event: {event_details}")
 
             except Exception as e:
-                logging.warning(f"Error extracting data for event card at index {index}: {e}")
+                logging.warning(f"Error extracting data for event card {index}: {e}")
 
         logging.info(f"Total events scraped: {len(scraped_events)}")
         return scraped_events
@@ -307,71 +353,76 @@ def scrape_events(driver):
     except Exception as e:
         logging.error(f"Error while scraping events: {e}", exc_info=True)
         return []
-    
-def interact_with_event(driver, event_index=8):
+
+def interact_with_event_and_select_tickets(driver, event_index, original_window):
     """
-    Navigate to the specified event, select a ticket quantity, click Continue,
-    and then proceed through subsequent pages by selecting required options
-    and clicking Continue. Aborts gracefully if "I'll upload later" option is not found.
+    1. Re-locate the event cards on the original tab.
+    2. Click on the event at `event_index`.
+    3. Wait for the new tab, switch to it.
+    4. Select ticket quantity = 1, click next, next, ...
+    5. Select E-Tickets, attempt "I'll upload later".
+    
+    Returns True if we successfully reached the seat dropdown page. 
+    Returns False if anything times out or fails.
     """
     try:
-        logging.info(f"Attempting to interact with event at index {event_index + 1}.")
+        logging.info(f"Attempting to interact with event at index {event_index}.")
+        # Switch to the original window
+        driver.switch_to.window(original_window)
 
-        # Store the original window handle
-        original_window = driver.current_window_handle
-
-        # Locate the list of event cards
+        # Re-find the event cards
         event_cards = WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located((By.CLASS_NAME, "sc-1or4et4-0"))
         )
+        if event_index >= len(event_cards):
+            logging.error(f"Event at index {event_index} does not exist on the page.")
+            return False
 
-        # Ensure the event exists
-        if not event_cards or event_index >= len(event_cards):
-            logging.error(f"Event at index {event_index + 1} does not exist.")
-            return
+        # Wait until clickable, then click
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable(event_cards[event_index])
+        )
+        event_cards[event_index].click()
+        logging.info(f"Clicked on the event at index {event_index}.")
 
-        # Click the specified event
-        event_card = event_cards[event_index]
-        event_card.click()
-        logging.info(f"Clicked on the event at index {event_index + 1}.")
-
-        # Wait for a new window/tab to open and switch to it
+        # Wait for the second tab
         WebDriverWait(driver, 30).until(EC.number_of_windows_to_be(2))
-        new_window = [window for window in driver.window_handles if window != original_window][0]
+
+        # Identify the newly opened tab
+        new_windows = [w for w in driver.window_handles if w != original_window]
+        if not new_windows:
+            logging.error("No new window was opened after clicking the event.")
+            return False
+
+        new_window = new_windows[0]
         driver.switch_to.window(new_window)
         logging.info("Switched to the new window/tab.")
 
-        # Wait for the event detail page content to be visible
+        # Now proceed with ticket quantity question
         WebDriverWait(driver, 30).until(
             EC.visibility_of_element_located((By.XPATH, "//div[contains(text(), 'How many tickets do you have?')]"))
         )
-
-        # Scroll to the bottom of the page to ensure elements are in view
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
-        # Wait for and select quantity
         quantity_dropdown = WebDriverWait(driver, 30).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, 'select[name="quantity"]'))
         )
-        select = Select(quantity_dropdown)
-        select.select_by_visible_text("1 Ticket")
+        Select(quantity_dropdown).select_by_visible_text("1 Ticket")
         logging.info("Selected 1 ticket from the dropdown.")
 
-        # Click the first Continue button
+        # Click first continue
         first_continue_button = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable((By.CLASS_NAME, "sc-6f7nfk-0"))
         )
         first_continue_button.click()
         logging.info("Clicked the first Continue button.")
 
-        # Wait for the next page to load by waiting for a new "Continue" button in the form
+        # Second continue
         WebDriverWait(driver, 30).until(
             EC.presence_of_element_located(
                 (By.XPATH, "//form[@novalidate]//button[normalize-space()='Continue' and not(@disabled)]")
             )
         )
-
-        # Locate and click the second Continue button
         second_continue_button = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//form[@novalidate]//button[normalize-space()='Continue' and not(@disabled)]")
@@ -380,12 +431,12 @@ def interact_with_event(driver, event_index=8):
         second_continue_button.click()
         logging.info("Clicked the second Continue button.")
 
-        # Wait for the new page to load by checking for the ticket type question
+        # Ticket type question
         WebDriverWait(driver, 30).until(
-            EC.visibility_of_element_located((By.XPATH, "//div[contains(text(), 'What type of tickets are you listing?')]"))
+            EC.visibility_of_element_located(
+                (By.XPATH, "//div[contains(text(), 'What type of tickets are you listing?')]")
+            )
         )
-
-        # Select "E-Tickets" option
         e_tickets_radio = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//label[.//span[contains(text(),'E-Tickets')]]//input[@type='Radio']")
@@ -394,20 +445,17 @@ def interact_with_event(driver, event_index=8):
         e_tickets_radio.click()
         logging.info("Selected E-Tickets.")
 
-        # Wait for the "I'll upload later" option to become clickable
+        # Attempt to find & click "I'll upload later"
         ill_upload_later_radio = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//label[.//span[contains(text(), \"I'll upload later\")]]")
             )
         )
-        # Scroll to the element to ensure it's in view
         driver.execute_script("arguments[0].scrollIntoView(true);", ill_upload_later_radio)
-
-        # Click the "I'll upload later" radio button
         ill_upload_later_radio.click()
         logging.info("Selected 'I'll upload later' option.")
 
-        # Click the final Continue button
+        # Final continue
         final_continue_button = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//button[normalize-space()='Continue' and not(@disabled)]")
@@ -415,130 +463,169 @@ def interact_with_event(driver, event_index=8):
         )
         final_continue_button.click()
         logging.info("Clicked the final Continue button.")
+        return True
 
     except TimeoutException as e:
         logging.error(f"Timeout error: {e}", exc_info=True)
+        # Gracefully close this new tab if it opened
+        for w in driver.window_handles:
+            if w != original_window:
+                driver.switch_to.window(w)
+                driver.close()
+        # Switch back
+        driver.switch_to.window(original_window)
+        return False
     except Exception as e:
-        logging.error(f"Error interacting with the event at index {event_index + 1}: {e}", exc_info=True)
+        logging.error(f"Error interacting with the event at index {event_index}: {e}", exc_info=True)
+        # Gracefully close any new tab
+        for w in driver.window_handles:
+            if w != original_window:
+                driver.switch_to.window(w)
+                driver.close()
+        driver.switch_to.window(original_window)
+        return False
 
-def interact_with_seat_dropdown(driver):
+def get_all_seats_labels(driver):
     """
-    Extract all labels from the "Where are your seats?" dropdown, select the first option,
-    and click the "Continue" button.
+    Retrieves seat labels from the "Where are your seats?" dropdown on the new tab/page.
+    Returns a list of seat labels. If we cannot find the dropdown, returns [].
     """
     try:
-        logging.info("Interacting with the 'Where are your seats?' dropdown.")
-
-        # Wait for the dropdown to be visible
-        dropdown = WebDriverWait(driver, 20).until(
+        logging.info("Retrieving all seat labels from the dropdown page.")
+        dropdown = WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, ".css-13jwkg0-control"))
         )
-        logging.info("Dropdown located.")
-
-        # Click the dropdown arrow to reveal options
         dropdown_arrow = dropdown.find_element(By.CSS_SELECTOR, ".css-1og4hos-indicatorContainer")
         dropdown_arrow.click()
-        logging.info("Clicked on the dropdown arrow to reveal options.")
+        logging.info("Clicked on the dropdown arrow to reveal seat options.")
 
-        # Wait for the dropdown options to load
-        options = WebDriverWait(driver, 20).until(
+        options = WebDriverWait(driver, 15).until(
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div[class*='menu'] div"))
         )
-
-        # Extract all labels from the dropdown
         labels = [option.text for option in options if option.text.strip()]
-        logging.info(f"Extracted dropdown labels: {labels}")  # Log the extracted options
-        if not labels:
-            raise ValueError("Dropdown options are empty or not interactable.")
-        
-        # Select the first option in the dropdown
-        first_option = options[0]
-        driver.execute_script("arguments[0].scrollIntoView(true);", first_option)
-        first_option.click()
-        logging.info(f"Selected the first option: {labels[0]}")
 
-        # Click the "Continue" button
-        continue_button = WebDriverWait(driver, 20).until(
-            EC.element_to_be_clickable((By.XPATH, "//button[normalize-space()='Continue']"))
-        )
-        continue_button.click()
-        logging.info("Clicked the 'Continue' button.")
+        logging.info(f"Extracted seat labels: {labels}")
+
+        # Close the dropdown
+        driver.execute_script("arguments[0].click();", dropdown_arrow)
 
         return labels
 
-    except TimeoutException as e:
-        logging.error(f"Timeout while interacting with the dropdown: {e}", exc_info=True)
-        raise
+    except TimeoutException:
+        logging.error("Timeout while retrieving seat labels.")
+        return []
     except Exception as e:
-        logging.error(f"An error occurred while interacting with the dropdown: {e}", exc_info=True)
-        raise
+        logging.error(f"An error occurred while retrieving seat labels: {e}", exc_info=True)
+        return []
+
+def select_seat_in_dropdown(driver, seat_index):
+    """
+    Opens the seat dropdown again, selects seat at `seat_index`, clicks "Continue".
+    Returns True if successful, False otherwise.
+    """
+    try:
+        logging.info(f"Selecting seat at index {seat_index}.")
+        dropdown = WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".css-13jwkg0-control"))
+        )
+        dropdown_arrow = dropdown.find_element(By.CSS_SELECTOR, ".css-1og4hos-indicatorContainer")
+        dropdown_arrow.click()
+
+        options = WebDriverWait(driver, 15).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div[class*='menu'] div"))
+        )
+        if seat_index >= len(options):
+            logging.warning(f"Seat index {seat_index} is out of range (only {len(options)} available).")
+            # Click outside or close
+            driver.execute_script("arguments[0].click();", dropdown_arrow)
+            return False
+
+        desired_option = options[seat_index]
+        driver.execute_script("arguments[0].scrollIntoView(true);", desired_option)
+        desired_option.click()
+        logging.info(f"Clicked on seat index {seat_index} in the dropdown.")
+
+        # Click the "Continue" button
+        continue_button = WebDriverWait(driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, "//button[normalize-space()='Continue']"))
+        )
+        continue_button.click()
+        logging.info("Clicked the 'Continue' button after seat selection.")
+        return True
+
+    except TimeoutException as e:
+        logging.error(f"Timeout while selecting seat {seat_index}: {e}", exc_info=True)
+        return False
+    except Exception as e:
+        logging.error(f"An error occurred while selecting seat index {seat_index}: {e}", exc_info=True)
+        return False
 
 def interact_with_ticket_price_page(driver):
     """
-    Extract ticket price and scrape all listings, handling cases where the 
-    link opens in a new window/tab or changes the current page.
+    Extract ticket price and scrape all listings on the Compare page. 
+    If no new window is opened, it might open in the same tab. 
+    We handle both cases. 
+    Returns (price, listings).
     """
     try:
-        logging.info("Interacting with the ticket price page.")
+        logging.info("Interacting with the ticket price page...")
 
-        # Wait for the price input field and extract price
-        ticket_price_input = WebDriverWait(driver, 60).until(
+        ticket_price_input = WebDriverWait(driver, 30).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, "input[name='ticketPrice_non_decimal']"))
         )
         ticket_price = ticket_price_input.get_attribute("value")
         logging.info(f"Extracted per ticket price: US$ {ticket_price}")
 
-        # Locate the "Compare similar tickets" link/button
-        compare_link = WebDriverWait(driver, 60).until(
+        compare_link = WebDriverWait(driver, 30).until(
             EC.element_to_be_clickable((By.LINK_TEXT, "Compare similar tickets"))
         )
         logging.info("Clicking on 'Compare similar tickets'.")
 
-        # Capture current window handles and URL before clicking
         old_handles = driver.window_handles
         current_url = driver.current_url
 
-        # Click the link
         compare_link.click()
 
-        # Wait until a new window opens, URL changes, or listings container appears
-        WebDriverWait(driver, 60).until(
-            lambda d: len(d.window_handles) > len(old_handles) or
-                      d.current_url != current_url or
-                      "listings-container" in d.page_source
+        # Wait until new tab or page load
+        WebDriverWait(driver, 30).until(
+            lambda d: (
+                len(d.window_handles) > len(old_handles)
+                or d.current_url != current_url
+                or "listings-container" in d.page_source
+            )
         )
 
-        # If a new window opened, switch to it
+        # If a new tab is opened, switch to it
+        new_compare_tab = None
         if len(driver.window_handles) > len(old_handles):
-            new_handles = set(driver.window_handles) - set(old_handles)
-            if new_handles:
-                driver.switch_to.window(new_handles.pop())
-                logging.info("Switched to new window/tab opened by the link.")
+            new_tabs = set(driver.window_handles) - set(old_handles)
+            if new_tabs:
+                new_compare_tab = new_tabs.pop()
+                driver.switch_to.window(new_compare_tab)
+                logging.info("Switched to new Compare tab.")
 
-        # Now wait for the listings container to be present
-        listings_container = WebDriverWait(driver, 60).until(
+        listings_container = WebDriverWait(driver, 30).until(
             EC.presence_of_element_located((By.ID, "listings-container"))
         )
         logging.info("Listings container loaded successfully.")
 
-        # Scroll and load all listings dynamically
         listings = []
         last_height = driver.execute_script("return document.body.scrollHeight")
+
         while True:
             visible_listings = listings_container.find_elements(By.CSS_SELECTOR, ".sc-194s59m-1.ivCIjj")
-            for listing in visible_listings[len(listings):]:  # Avoid re-scraping already scraped listings
+            for listing in visible_listings[len(listings):]:
                 try:
                     title = listing.find_element(By.CSS_SELECTOR, ".sc-1t1b4cp-0.sc-1t1b4cp-6").text
                     price = listing.find_element(By.CSS_SELECTOR, ".sc-1t1b4cp-0.sc-1t1b4cp-1").text
                     passes = listing.find_element(By.CSS_SELECTOR, ".sc-1t1b4cp-11.sc-1t1b4cp-13").text
-                    
-                    # Use find_elements to safely attempt to retrieve rating elements
+
                     rating_elements = listing.find_elements(By.CSS_SELECTOR, ".sc-5cv63s-3")
                     rating_score = rating_elements[0].text if rating_elements else ""
-                    
+
                     rating_label_elements = listing.find_elements(By.CSS_SELECTOR, ".sc-5cv63s-2")
                     rating_label = rating_label_elements[0].text if rating_label_elements else ""
-                    
+
                     listings.append({
                         "title": title,
                         "price": price,
@@ -548,19 +635,26 @@ def interact_with_ticket_price_page(driver):
                     })
                     logging.info(f"Scraped listing: {title}, {price}, {passes}, {rating_score}, {rating_label}")
                 except Exception as e:
-                    logging.warning(f"Error scraping listing: {e}", exc_info=True)
+                    logging.warning(f"Error scraping a listing: {e}", exc_info=True)
 
-
-            # Scroll to bottom to load more listings
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            time.sleep(2)  # Allow time for new listings to load
-
+            time.sleep(2)
             new_height = driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
                 break
             last_height = new_height
 
         logging.info(f"Total listings scraped: {len(listings)}")
+
+        # If we opened a new tab for compare, close it & switch back
+        if new_compare_tab and new_compare_tab in driver.window_handles:
+            driver.close()
+            # Switch back to whichever tab was active before compare
+            for wh in old_handles:
+                if wh in driver.window_handles:
+                    driver.switch_to.window(wh)
+                    break
+
         return ticket_price, listings
 
     except TimeoutException as e:
@@ -580,7 +674,6 @@ def write_data_to_csv(final_data, csv_file):
         print("No data to write to CSV.")
         return
 
-    # Define the specific order of fields/columns
     fieldnames = [
         "event_date",
         "event_time",
@@ -602,7 +695,7 @@ def write_data_to_csv(final_data, csv_file):
             for row in final_data:
                 writer.writerow(row)
         logging.info(f"Wrote {len(final_data)} rows to CSV: {csv_file}")
-        print(f"\nScraping complete. Data saved to '{csv_file}'.")
+        print(f"\nScraping complete (or partial). Data saved to '{csv_file}'.")
     except Exception as e:
         logging.error(f"Error writing data to CSV: {e}", exc_info=True)
 
