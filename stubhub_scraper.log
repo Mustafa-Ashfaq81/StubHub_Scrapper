@@ -1,60 +1,333 @@
-2025-01-12 05:01:43,841 - INFO - === Starting StubHub Scraper ===
-2025-01-12 05:01:45,944 - INFO - Navigating to StubHub login page...
-2025-01-12 05:01:53,334 - INFO - Waiting for user to complete manual login...
-2025-01-12 05:02:31,782 - INFO - Login detected. Resuming script execution.
-2025-01-12 05:02:31,782 - INFO - Navigating to 'Sell Tickets' page.
-2025-01-12 05:02:38,292 - INFO - Arrived at Sell page.
-2025-01-12 05:02:38,292 - INFO - Searching for location: capital one arena
-2025-01-12 05:02:38,292 - INFO - Attempting to close any pop-ups.
-2025-01-12 05:02:38,348 - INFO - No captcha detected.
-2025-01-12 05:02:38,411 - INFO - Search input found. Interacting with it.
-2025-01-12 05:02:45,604 - INFO - Location 'capital one arena' searched successfully.
-2025-01-12 05:02:45,643 - INFO - Navigating to 'Parking' tab.
-2025-01-12 05:02:45,713 - INFO - 'Parking' tab found. Clicking it.
-2025-01-12 05:02:48,885 - INFO - Successfully navigated to 'Parking' tab.
-2025-01-12 05:02:48,885 - INFO - Starting to scrape event details.
-2025-01-12 05:02:49,001 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
-2025-01-12 05:02:49,050 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
-2025-01-12 05:02:49,081 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
-2025-01-12 05:02:49,126 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
-2025-01-12 05:02:49,212 - INFO - Scraped event: {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:49,335 - INFO - Scraped event: {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:49,446 - INFO - Scraped event: {'date': 'JAN 13', 'time': 'MON', 'name': 'PARKING PASSES ONLY Minnesota Timberwolves at Washington Wizards', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:49,573 - INFO - Scraped event: {'date': 'JAN 14', 'time': 'TUE', 'name': 'PARKING PASSES ONLY Anaheim Ducks at Washington Capitals', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:49,670 - INFO - Scraped event: {'date': 'JAN 16', 'time': 'THU', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:49,747 - INFO - Scraped event: {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:49,873 - INFO - Scraped event: {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
-2025-01-12 05:02:49,999 - INFO - Scraped event: {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:50,095 - INFO - Scraped event: {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
-2025-01-12 05:02:50,209 - INFO - Scraped event: {'date': 'JAN 19', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
-2025-01-12 05:02:50,332 - INFO - Scraped event: {'date': 'JAN 24', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:50,474 - INFO - Scraped event: {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:50,650 - INFO - Scraped event: {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:50,758 - INFO - Scraped event: {'date': 'JAN 26', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:50,900 - INFO - Scraped event: {'date': 'JAN 28', 'time': 'TUE', 'name': "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)", 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:50,996 - INFO - Scraped event: {'date': 'JAN 29', 'time': 'WED', 'name': 'PARKING PASSES ONLY Toronto Raptors at Washington Wizards', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:51,075 - INFO - Scraped event: {'date': 'JAN 30', 'time': 'THU', 'name': 'PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:51,203 - INFO - Scraped event: {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:51,306 - INFO - Scraped event: {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
-2025-01-12 05:02:51,376 - INFO - Scraped event: {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
-2025-01-12 05:02:51,456 - INFO - Scraped event: {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Winnipeg Jets at Washington Capitals', 'location': 'Washington, DC, USA'}
-2025-01-12 05:02:51,491 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
-2025-01-12 05:02:51,491 - INFO - Total events scraped: 26
-2025-01-12 05:02:51,502 - INFO - Scraped 26 events: [{'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}, {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 12', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Oklahoma City Thunder at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 13', 'time': 'MON', 'name': 'PARKING PASSES ONLY Minnesota Timberwolves at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 14', 'time': 'TUE', 'name': 'PARKING PASSES ONLY Anaheim Ducks at Washington Capitals', 'location': 'Washington, DC, USA'}, {'date': 'JAN 16', 'time': 'THU', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}, {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}, {'date': 'JAN 17', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}, {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}, {'date': 'JAN 18', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}, {'date': 'JAN 19', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}, {'date': 'JAN 24', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 25', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 26', 'time': 'SUN', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}, {'date': 'JAN 28', 'time': 'TUE', 'name': "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)", 'location': 'Washington, DC, USA'}, {'date': 'JAN 29', 'time': 'WED', 'name': 'PARKING PASSES ONLY Toronto Raptors at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 30', 'time': 'THU', 'name': 'PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards', 'location': 'Washington, DC, USA'}, {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)', 'location': 'Washington, DC, USA'}, {'date': 'JAN 31', 'time': 'FRI', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}, {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}, {'date': 'FEB 01', 'time': 'SAT', 'name': 'PARKING PASSES ONLY Winnipeg Jets at Washington Capitals', 'location': 'Washington, DC, USA'}, {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}]
-2025-01-12 05:02:51,502 - INFO - Attempting to interact with event at index 9.
-2025-01-12 05:02:51,699 - INFO - Clicked on the event at index 9.
-2025-01-12 05:02:51,729 - INFO - Switched to the new window/tab.
-2025-01-12 05:02:56,565 - INFO - Selected 1 ticket from the dropdown.
-2025-01-12 05:02:56,816 - INFO - Clicked the first Continue button.
-2025-01-12 05:02:58,800 - INFO - Clicked the second Continue button.
-2025-01-12 05:03:00,750 - INFO - Selected E-Tickets.
-2025-01-12 05:03:01,045 - INFO - Selected 'I'll upload later' option.
-2025-01-12 05:03:01,295 - INFO - Clicked the final Continue button.
-2025-01-12 05:03:01,295 - INFO - Interacting with the 'Where are your seats?' dropdown.
-2025-01-12 05:03:03,978 - INFO - Dropdown located.
-2025-01-12 05:03:04,215 - INFO - Clicked on the dropdown arrow to reveal options.
-2025-01-12 05:03:06,353 - INFO - Extracted dropdown labels: ['2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi\n33 K St. NW - 0.7 mi from venue - Within 0.75 mi\n72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi\n81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi\n98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi\n116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi\n123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi\n135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi\n140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi\n144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi\n425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi\n455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi\n524 11th St NW 0.5 mi from venue - Within 0.5 mi\n532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi\n560 8th St NW - 0.1 mi from venue - Within 0.25 mi\n573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi\n600 E St. NW - 0.1 mi from venue - Within 0.25 mi\n600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi\n601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi\n608 10th St NW - 0.3 mi from venue - Within 0.5 mi\n609 10th St NW - 0.3 mi from venue - Within 0.5 mi\n612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi\n625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi\n650 Mass Ave - 0.2 mi from venue - Within 0.25 mi\n716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi\n732 6th St. NW - 0.1 mi from venue - Within 0.25 mi\n818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi\n900 G St. NW Garage - Within 0.25 mi\n901 5th St. NW - 0.3 mi from venue - Within 0.5 mi\n901 7th St. NW - Within 0.25 mi\n901 E Street NW - 0.2 mi from venue - Within 0.25 mi\n909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi\n916 H St. NW - 0.2 mi from venue - Within 0.25 mi\n1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi\n1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi\n1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi\n1441 L St NW - 0.8 mi from venue - Within 1.0 mi\n1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi\n1602 L St. NW - 0.9 mi from venue - Within 1.0 mi\n1620 I St NW - 0.9 mi from venue - Within 1.0 mi\nCapital One Arena Garage - Arena Parking Garage\nCourtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi\nGallery Place 6th St NW - Within 0.25 mi\nHilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi\nHotel Monaco - 0.1 mi from venue - Within 0.25 mi\nLoews Madison Hotel - 0.9 mi from venue - Within 1.0 mi\nMarket Square - 0.2 mi from venue - Within 0.25 mi\nRenaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi\nThe Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi\nWashington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi\nWashington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi\nWashington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi', '2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi', '33 K St. NW - 0.7 mi from venue - Within 0.75 mi', '72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi', '81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi', '98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi', '116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi', '123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi', '135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi', '140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi', '144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi', '425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi', '455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi', '524 11th St NW 0.5 mi from venue - Within 0.5 mi', '532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi', '560 8th St NW - 0.1 mi from venue - Within 0.25 mi', '573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi', '600 E St. NW - 0.1 mi from venue - Within 0.25 mi', '600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi', '601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi', '608 10th St NW - 0.3 mi from venue - Within 0.5 mi', '609 10th St NW - 0.3 mi from venue - Within 0.5 mi', '612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi', '625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi', '650 Mass Ave - 0.2 mi from venue - Within 0.25 mi', '716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi', '732 6th St. NW - 0.1 mi from venue - Within 0.25 mi', '818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi', '900 G St. NW Garage - Within 0.25 mi', '901 5th St. NW - 0.3 mi from venue - Within 0.5 mi', '901 7th St. NW - Within 0.25 mi', '901 E Street NW - 0.2 mi from venue - Within 0.25 mi', '909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi', '916 H St. NW - 0.2 mi from venue - Within 0.25 mi', '1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi', '1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi', '1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi', '1441 L St NW - 0.8 mi from venue - Within 1.0 mi', '1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi', '1602 L St. NW - 0.9 mi from venue - Within 1.0 mi', '1620 I St NW - 0.9 mi from venue - Within 1.0 mi', 'Capital One Arena Garage - Arena Parking Garage', 'Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi', 'Gallery Place 6th St NW - Within 0.25 mi', 'Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi', 'Hotel Monaco - 0.1 mi from venue - Within 0.25 mi', 'Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi', 'Market Square - 0.2 mi from venue - Within 0.25 mi', 'Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi', 'The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi', 'Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi', 'Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi', 'Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi']
-2025-01-12 05:03:06,594 - INFO - Selected the first option: 2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:42:27,160 - INFO - === Starting StubHub Scraper ===
+2025-01-16 00:42:30,310 - INFO - Navigating to StubHub login page...
+2025-01-16 00:42:39,668 - INFO - Waiting for user to complete manual login...
+2025-01-16 00:43:05,981 - INFO - Login detected. Resuming script execution.
+2025-01-16 00:43:05,981 - INFO - Navigating to 'Sell Tickets' page.
+2025-01-16 00:43:12,541 - INFO - Arrived at Sell page.
+2025-01-16 00:43:12,541 - INFO - Searching for location: capital one arena
+2025-01-16 00:43:12,541 - INFO - Attempting to close any pop-ups.
+2025-01-16 00:43:12,590 - INFO - No captcha detected.
+2025-01-16 00:43:20,211 - INFO - Location 'capital one arena' searched successfully.
+2025-01-16 00:43:20,211 - INFO - Navigating to 'Parking' tab.
+2025-01-16 00:43:23,523 - INFO - Successfully navigated to 'Parking' tab.
+2025-01-16 00:43:28,524 - INFO - Starting to scrape event details.
+2025-01-16 00:43:28,690 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:28,786 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:28,880 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:28,974 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:29,150 - INFO - Scraped event: {'date': 'JAN 16', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:29,341 - INFO - Scraped event: {'date': 'JAN 16', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:29,491 - INFO - Scraped event: {'date': 'JAN 17', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:29,676 - INFO - Scraped event: {'date': 'JAN 17', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:29,862 - INFO - Scraped event: {'date': 'JAN 18', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:30,030 - INFO - Scraped event: {'date': 'JAN 18', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:30,202 - INFO - Scraped event: {'date': 'JAN 19', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:30,343 - INFO - Scraped event: {'date': 'JAN 24', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:30,509 - INFO - Scraped event: {'date': 'JAN 25', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:30,680 - INFO - Scraped event: {'date': 'JAN 25', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:30,851 - INFO - Scraped event: {'date': 'JAN 26', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:31,040 - INFO - Scraped event: {'date': 'JAN 28', 'time': '6:30 PM', 'name': "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)", 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:31,236 - INFO - Scraped event: {'date': 'JAN 29', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Toronto Raptors at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:31,417 - INFO - Scraped event: {'date': 'JAN 30', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:31,583 - INFO - Scraped event: {'date': 'JAN 31', 'time': '6:30 PM', 'name': 'PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:31,753 - INFO - Scraped event: {'date': 'JAN 31', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:31,930 - INFO - Scraped event: {'date': 'FEB 01', 'time': '2:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:32,118 - INFO - Scraped event: {'date': 'FEB 01', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Winnipeg Jets at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:32,280 - INFO - Scraped event: {'date': 'FEB 01', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:32,444 - INFO - Scraped event: {'date': 'FEB 02', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:32,590 - INFO - Scraped event: {'date': 'FEB 02', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:32,674 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:32,674 - INFO - Total events scraped: 26
+2025-01-16 00:43:37,676 - INFO - Starting to scrape event details.
+2025-01-16 00:43:37,800 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:37,907 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:37,993 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:38,090 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:38,250 - INFO - Scraped event: {'date': 'JAN 16', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:38,390 - INFO - Scraped event: {'date': 'JAN 16', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:38,537 - INFO - Scraped event: {'date': 'JAN 17', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:38,660 - INFO - Scraped event: {'date': 'JAN 17', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:38,820 - INFO - Scraped event: {'date': 'JAN 18', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:39,008 - INFO - Scraped event: {'date': 'JAN 18', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:39,171 - INFO - Scraped event: {'date': 'JAN 19', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:39,340 - INFO - Scraped event: {'date': 'JAN 24', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:39,504 - INFO - Scraped event: {'date': 'JAN 25', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:39,640 - INFO - Scraped event: {'date': 'JAN 25', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:39,800 - INFO - Scraped event: {'date': 'JAN 26', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:39,955 - INFO - Scraped event: {'date': 'JAN 28', 'time': '6:30 PM', 'name': "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)", 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:40,160 - INFO - Scraped event: {'date': 'JAN 29', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Toronto Raptors at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:40,330 - INFO - Scraped event: {'date': 'JAN 30', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:40,462 - INFO - Scraped event: {'date': 'JAN 31', 'time': '6:30 PM', 'name': 'PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:40,621 - INFO - Scraped event: {'date': 'JAN 31', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:40,797 - INFO - Scraped event: {'date': 'FEB 01', 'time': '2:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:40,986 - INFO - Scraped event: {'date': 'FEB 01', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Winnipeg Jets at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:41,147 - INFO - Scraped event: {'date': 'FEB 01', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:41,318 - INFO - Scraped event: {'date': 'FEB 02', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:41,450 - INFO - Scraped event: {'date': 'FEB 02', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Come From Away', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:41,544 - INFO - Scraped event: {'date': 'N/A', 'time': 'N/A', 'name': 'N/A', 'location': 'N/A'}
+2025-01-16 00:43:41,544 - INFO - Total events scraped: 26
+2025-01-16 00:43:41,544 - INFO - Merged final events after deduplication and removing 'N/A':
+[
+  {
+    "date": "JAN 16",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 17",
+    "time": "8:00 PM",
+    "name": "PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 17",
+    "time": "8:00 PM",
+    "name": "PARKING PASSES ONLY Russell Peters",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "JAN 18",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 18",
+    "time": "8:00 PM",
+    "name": "PARKING PASSES ONLY Russell Peters",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "JAN 19",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Russell Peters",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "JAN 24",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Monster Jam",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 25",
+    "time": "1:00 PM",
+    "name": "PARKING PASSES ONLY Monster Jam",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 25",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Monster Jam",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 26",
+    "time": "1:00 PM",
+    "name": "PARKING PASSES ONLY Monster Jam",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 28",
+    "time": "6:30 PM",
+    "name": "PARKING PASSES ONLY St. John's Red Storm at Georgetown Hoyas Basketball (Rescheduled from Jan 28 2025)",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 29",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Toronto Raptors at Washington Wizards",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 30",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Los Angeles Lakers at Washington Wizards",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 31",
+    "time": "6:30 PM",
+    "name": "PARKING PASSES ONLY Butler Bulldogs at Georgetown Hoyas Basketball (Rescheduled from Jan 31 2025)",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "JAN 31",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Come From Away",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "FEB 01",
+    "time": "2:00 PM",
+    "name": "PARKING PASSES ONLY Come From Away",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "FEB 01",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Winnipeg Jets at Washington Capitals",
+    "location": "Washington, DC, USA"
+  },
+  {
+    "date": "FEB 01",
+    "time": "8:00 PM",
+    "name": "PARKING PASSES ONLY Come From Away",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "FEB 02",
+    "time": "1:00 PM",
+    "name": "PARKING PASSES ONLY Come From Away",
+    "location": "Tysons, VA, USA"
+  },
+  {
+    "date": "FEB 02",
+    "time": "7:00 PM",
+    "name": "PARKING PASSES ONLY Come From Away",
+    "location": "Tysons, VA, USA"
+  }
+]
+2025-01-16 00:43:41,550 - INFO - Processing event #1: {'date': 'JAN 16', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Phoenix Suns at Washington Wizards (Rescheduled from Jan 16 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:41,594 - WARNING - Could not find 'Sell Tickets' button in the card.
+2025-01-16 00:43:41,594 - INFO - Processing event #2: {'date': 'JAN 17', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY DePaul Blue Demons at Georgetown Hoyas Basketball (Rescheduled from Jan 17 2025)', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:41,640 - WARNING - Could not find 'Sell Tickets' button in the card.
+2025-01-16 00:43:41,640 - INFO - Processing event #3: {'date': 'JAN 17', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:41,690 - WARNING - Could not find 'Sell Tickets' button in the card.
+2025-01-16 00:43:41,690 - INFO - Processing event #4: {'date': 'JAN 18', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Pittsburgh Penguins at Washington Capitals', 'location': 'Washington, DC, USA'}
+2025-01-16 00:43:41,740 - WARNING - Could not find 'Sell Tickets' button in the card.
+2025-01-16 00:43:41,740 - INFO - Processing event #5: {'date': 'JAN 18', 'time': '8:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:43:42,033 - INFO - Clicked on the event at index 5.
+2025-01-16 00:43:42,060 - INFO - Switched to new event tab.
+2025-01-16 00:43:44,247 - INFO - Selected 1 ticket.
+2025-01-16 00:43:44,533 - INFO - Clicked first Continue.
+2025-01-16 00:43:46,440 - INFO - Clicked second Continue.
+2025-01-16 00:44:08,704 - ERROR - Error in do_quantity_and_ticket_type: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A1A380D5+2992373]
+	(No symbol) [0x00007FF7A16CBFD0]
+	(No symbol) [0x00007FF7A156590A]
+	(No symbol) [0x00007FF7A15B926E]
+	(No symbol) [0x00007FF7A15B955C]
+	(No symbol) [0x00007FF7A16027D7]
+	(No symbol) [0x00007FF7A15DF3AF]
+	(No symbol) [0x00007FF7A15FF584]
+	(No symbol) [0x00007FF7A15DF113]
+	(No symbol) [0x00007FF7A15AA918]
+	(No symbol) [0x00007FF7A15ABA81]
+	GetHandleVerifier [0x00007FF7A1A96A2D+3379789]
+	GetHandleVerifier [0x00007FF7A1AAC32D+3468109]
+	GetHandleVerifier [0x00007FF7A1AA0043+3418211]
+	GetHandleVerifier [0x00007FF7A182C78B+847787]
+	(No symbol) [0x00007FF7A16D757F]
+	(No symbol) [0x00007FF7A16D2FC4]
+	(No symbol) [0x00007FF7A16D315D]
+	(No symbol) [0x00007FF7A16C2979]
+	BaseThreadInitThunk [0x00007FF95786259D+29]
+	RtlUserThreadStart [0x00007FF95934AF38+40]
+Traceback (most recent call last):
+  File "D:\LUMS\Snr\stubhub\runthis.py", line 413, in do_quantity_and_ticket_type
+    e_tix = WebDriverWait(driver, 20).until(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A1A380D5+2992373]
+	(No symbol) [0x00007FF7A16CBFD0]
+	(No symbol) [0x00007FF7A156590A]
+	(No symbol) [0x00007FF7A15B926E]
+	(No symbol) [0x00007FF7A15B955C]
+	(No symbol) [0x00007FF7A16027D7]
+	(No symbol) [0x00007FF7A15DF3AF]
+	(No symbol) [0x00007FF7A15FF584]
+	(No symbol) [0x00007FF7A15DF113]
+	(No symbol) [0x00007FF7A15AA918]
+	(No symbol) [0x00007FF7A15ABA81]
+	GetHandleVerifier [0x00007FF7A1A96A2D+3379789]
+	GetHandleVerifier [0x00007FF7A1AAC32D+3468109]
+	GetHandleVerifier [0x00007FF7A1AA0043+3418211]
+	GetHandleVerifier [0x00007FF7A182C78B+847787]
+	(No symbol) [0x00007FF7A16D757F]
+	(No symbol) [0x00007FF7A16D2FC4]
+	(No symbol) [0x00007FF7A16D315D]
+	(No symbol) [0x00007FF7A16C2979]
+	BaseThreadInitThunk [0x00007FF95786259D+29]
+	RtlUserThreadStart [0x00007FF95934AF38+40]
+
+2025-01-16 00:44:08,704 - WARNING - Could not complete ticket quantity/type steps.
+2025-01-16 00:44:08,780 - INFO - Processing event #6: {'date': 'JAN 19', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Russell Peters', 'location': 'Tysons, VA, USA'}
+2025-01-16 00:44:09,075 - INFO - Clicked on the event at index 6.
+2025-01-16 00:44:09,110 - INFO - Switched to new event tab.
+2025-01-16 00:44:11,278 - INFO - Selected 1 ticket.
+2025-01-16 00:44:11,534 - INFO - Clicked first Continue.
+2025-01-16 00:44:12,894 - INFO - Clicked second Continue.
+2025-01-16 00:44:34,393 - ERROR - Error in do_quantity_and_ticket_type: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A1A380D5+2992373]
+	(No symbol) [0x00007FF7A16CBFD0]
+	(No symbol) [0x00007FF7A156590A]
+	(No symbol) [0x00007FF7A15B926E]
+	(No symbol) [0x00007FF7A15B955C]
+	(No symbol) [0x00007FF7A16027D7]
+	(No symbol) [0x00007FF7A15DF3AF]
+	(No symbol) [0x00007FF7A15FF584]
+	(No symbol) [0x00007FF7A15DF113]
+	(No symbol) [0x00007FF7A15AA918]
+	(No symbol) [0x00007FF7A15ABA81]
+	GetHandleVerifier [0x00007FF7A1A96A2D+3379789]
+	GetHandleVerifier [0x00007FF7A1AAC32D+3468109]
+	GetHandleVerifier [0x00007FF7A1AA0043+3418211]
+	GetHandleVerifier [0x00007FF7A182C78B+847787]
+	(No symbol) [0x00007FF7A16D757F]
+	(No symbol) [0x00007FF7A16D2FC4]
+	(No symbol) [0x00007FF7A16D315D]
+	(No symbol) [0x00007FF7A16C2979]
+	BaseThreadInitThunk [0x00007FF95786259D+29]
+	RtlUserThreadStart [0x00007FF95934AF38+40]
+Traceback (most recent call last):
+  File "D:\LUMS\Snr\stubhub\runthis.py", line 413, in do_quantity_and_ticket_type
+    e_tix = WebDriverWait(driver, 20).until(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A1A380D5+2992373]
+	(No symbol) [0x00007FF7A16CBFD0]
+	(No symbol) [0x00007FF7A156590A]
+	(No symbol) [0x00007FF7A15B926E]
+	(No symbol) [0x00007FF7A15B955C]
+	(No symbol) [0x00007FF7A16027D7]
+	(No symbol) [0x00007FF7A15DF3AF]
+	(No symbol) [0x00007FF7A15FF584]
+	(No symbol) [0x00007FF7A15DF113]
+	(No symbol) [0x00007FF7A15AA918]
+	(No symbol) [0x00007FF7A15ABA81]
+	GetHandleVerifier [0x00007FF7A1A96A2D+3379789]
+	GetHandleVerifier [0x00007FF7A1AAC32D+3468109]
+	GetHandleVerifier [0x00007FF7A1AA0043+3418211]
+	GetHandleVerifier [0x00007FF7A182C78B+847787]
+	(No symbol) [0x00007FF7A16D757F]
+	(No symbol) [0x00007FF7A16D2FC4]
+	(No symbol) [0x00007FF7A16D315D]
+	(No symbol) [0x00007FF7A16C2979]
+	BaseThreadInitThunk [0x00007FF95786259D+29]
+	RtlUserThreadStart [0x00007FF95934AF38+40]
+
+2025-01-16 00:44:34,393 - WARNING - Could not complete ticket quantity/type steps.
+2025-01-16 00:44:34,482 - INFO - Processing event #7: {'date': 'JAN 24', 'time': '7:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 00:44:34,780 - INFO - Clicked on the event at index 7.
+2025-01-16 00:44:34,813 - INFO - Switched to new event tab.
+2025-01-16 00:44:36,092 - INFO - Selected 1 ticket.
+2025-01-16 00:44:36,328 - INFO - Clicked first Continue.
+2025-01-16 00:44:37,605 - INFO - Clicked second Continue.
+2025-01-16 00:44:43,522 - INFO - Selected E-Tickets.
+2025-01-16 00:44:43,840 - INFO - Selected 'I'll upload later'.
+2025-01-16 00:44:44,068 - INFO - Clicked final Continue.
+2025-01-16 00:44:47,253 - INFO - Found seat options: ['2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi\n33 K St. NW - 0.7 mi from venue - Within 0.75 mi\n72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi\n81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi\n98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi\n116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi\n123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi\n135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi\n140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi\n144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi\n425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi\n455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi\n524 11th St NW 0.5 mi from venue - Within 0.5 mi\n532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi\n560 8th St NW - 0.1 mi from venue - Within 0.25 mi\n573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi\n600 E St. NW - 0.1 mi from venue - Within 0.25 mi\n600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi\n601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi\n608 10th St NW - 0.3 mi from venue - Within 0.5 mi\n609 10th St NW - 0.3 mi from venue - Within 0.5 mi\n612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi\n625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi\n650 Mass Ave - 0.2 mi from venue - Within 0.25 mi\n716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi\n732 6th St. NW - 0.1 mi from venue - Within 0.25 mi\n818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi\n900 G St. NW Garage - Within 0.25 mi\n901 5th St. NW - 0.3 mi from venue - Within 0.5 mi\n901 7th St. NW - Within 0.25 mi\n901 E Street NW - 0.2 mi from venue - Within 0.25 mi\n909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi\n916 H St. NW - 0.2 mi from venue - Within 0.25 mi\n1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi\n1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi\n1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi\n1441 L St NW - 0.8 mi from venue - Within 1.0 mi\n1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi\n1602 L St. NW - 0.9 mi from venue - Within 1.0 mi\n1620 I St NW - 0.9 mi from venue - Within 1.0 mi\nCapital One Arena Garage - Arena Parking Garage\nCourtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi\nGallery Place 6th St NW - Within 0.25 mi\nHilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi\nHotel Monaco - 0.1 mi from venue - Within 0.25 mi\nLoews Madison Hotel - 0.9 mi from venue - Within 1.0 mi\nMarket Square - 0.2 mi from venue - Within 0.25 mi\nRenaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi\nThe Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi\nWashington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi\nWashington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi\nWashington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi', '', '2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi', '33 K St. NW - 0.7 mi from venue - Within 0.75 mi', '72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi', '81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi', '98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi', '116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi', '123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi', '135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi', '140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi', '144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi', '425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi', '455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi', '524 11th St NW 0.5 mi from venue - Within 0.5 mi', '532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi', '560 8th St NW - 0.1 mi from venue - Within 0.25 mi', '573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi', '600 E St. NW - 0.1 mi from venue - Within 0.25 mi', '600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi', '601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi', '608 10th St NW - 0.3 mi from venue - Within 0.5 mi', '609 10th St NW - 0.3 mi from venue - Within 0.5 mi', '612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi', '625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi', '650 Mass Ave - 0.2 mi from venue - Within 0.25 mi', '716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi', '732 6th St. NW - 0.1 mi from venue - Within 0.25 mi', '818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi', '900 G St. NW Garage - Within 0.25 mi', '901 5th St. NW - 0.3 mi from venue - Within 0.5 mi', '901 7th St. NW - Within 0.25 mi', '901 E Street NW - 0.2 mi from venue - Within 0.25 mi', '909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi', '916 H St. NW - 0.2 mi from venue - Within 0.25 mi', '1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi', '1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi', '1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi', '1441 L St NW - 0.8 mi from venue - Within 1.0 mi', '1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi', '1602 L St. NW - 0.9 mi from venue - Within 1.0 mi', '1620 I St NW - 0.9 mi from venue - Within 1.0 mi', 'Capital One Arena Garage - Arena Parking Garage', 'Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi', 'Gallery Place 6th St NW - Within 0.25 mi', 'Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi', 'Hotel Monaco - 0.1 mi from venue - Within 0.25 mi', 'Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi', 'Market Square - 0.2 mi from venue - Within 0.25 mi', 'Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi', 'The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi', 'Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi', 'Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi', 'Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi']
+2025-01-16 00:44:47,253 - INFO - Processing seat: 2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi
 33 K St. NW - 0.7 mi from venue - Within 0.75 mi
 72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi
 81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi
@@ -106,21 +379,1180 @@ The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi
 Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi
 Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi
 Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi
-2025-01-12 05:03:06,830 - INFO - Clicked the 'Continue' button.
-2025-01-12 05:03:06,830 - INFO - Interacting with the ticket price page.
-2025-01-12 05:03:10,324 - INFO - Extracted per ticket price: US$ 15
-2025-01-12 05:03:10,387 - INFO - Clicking on 'Compare similar tickets'.
-2025-01-12 05:03:10,749 - INFO - Switched to new window/tab opened by the link.
-2025-01-12 05:03:20,516 - INFO - Listings container loaded successfully.
-2025-01-12 05:03:20,807 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $10, 1 pass, 10.0, Amazing
-2025-01-12 05:03:20,950 - INFO - Scraped listing: Parking within 1.2 mi from venue, $11, 1 pass, , 
-2025-01-12 05:03:21,930 - INFO - Scraped listing: 72 - 975 F St. NW - 0.2 mi from venue, $12, 1 pass, 8.4, Great
-2025-01-12 05:03:22,049 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
-2025-01-12 05:03:22,184 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
-2025-01-12 05:03:22,310 - INFO - Scraped listing: CARROLL SQUARE GARAGE - 0.3 MI AWAY, $13, 1 pass, , 
-2025-01-12 05:03:22,486 - INFO - Scraped listing: 116 - 733 10th St. NW - 0.3 mi from venue, $14, 1 pass, 9.1, Amazing
-2025-01-12 05:03:24,508 - INFO - Total listings scraped: 7
-2025-01-12 05:03:24,508 - INFO - Writing data to CSV: stubhub_output.csv
-2025-01-12 05:03:24,524 - INFO - Wrote 7 rows to CSV: stubhub_output.csv
-2025-01-12 05:03:24,524 - INFO - Closing browser.
-2025-01-12 05:03:26,987 - INFO - === StubHub Scraper Finished ===
+2025-01-16 00:44:56,856 - INFO - Selected seat option: 2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi
+33 K St. NW - 0.7 mi from venue - Within 0.75 mi
+72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi
+81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi
+98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi
+116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi
+123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi
+135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi
+140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi
+425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi
+455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi
+524 11th St NW 0.5 mi from venue - Within 0.5 mi
+532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+560 8th St NW - 0.1 mi from venue - Within 0.25 mi
+573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+600 E St. NW - 0.1 mi from venue - Within 0.25 mi
+600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi
+601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi
+608 10th St NW - 0.3 mi from venue - Within 0.5 mi
+609 10th St NW - 0.3 mi from venue - Within 0.5 mi
+612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi
+625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi
+650 Mass Ave - 0.2 mi from venue - Within 0.25 mi
+716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi
+732 6th St. NW - 0.1 mi from venue - Within 0.25 mi
+818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi
+900 G St. NW Garage - Within 0.25 mi
+901 5th St. NW - 0.3 mi from venue - Within 0.5 mi
+901 7th St. NW - Within 0.25 mi
+901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi
+916 H St. NW - 0.2 mi from venue - Within 0.25 mi
+1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi
+1441 L St NW - 0.8 mi from venue - Within 1.0 mi
+1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi
+1602 L St. NW - 0.9 mi from venue - Within 1.0 mi
+1620 I St NW - 0.9 mi from venue - Within 1.0 mi
+Capital One Arena Garage - Arena Parking Garage
+Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi
+Gallery Place 6th St NW - Within 0.25 mi
+Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi
+Hotel Monaco - 0.1 mi from venue - Within 0.25 mi
+Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi
+Market Square - 0.2 mi from venue - Within 0.25 mi
+Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi
+The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi
+Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi
+Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi
+Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:44:59,233 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:44:59,242 - INFO - Interacting with the ticket price page...
+2025-01-16 00:45:01,816 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:45:01,926 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:45:02,269 - INFO - Switched to new Compare tab.
+2025-01-16 00:45:13,303 - INFO - Listings container loaded successfully.
+2025-01-16 00:45:14,410 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:45:14,590 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:45:14,744 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:45:14,890 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:45:15,030 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:45:15,161 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:45:15,336 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:45:15,491 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:45:15,690 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:45:17,730 - INFO - Total listings scraped: 9
+2025-01-16 00:45:17,844 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:45:21,512 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:45:21,513 - INFO - Skipping blank seat label from dropdown.
+2025-01-16 00:45:21,513 - INFO - Processing seat: 2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:45:22,101 - INFO - Selected seat option: 2 Patterson St. NE - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:45:24,450 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:45:24,453 - INFO - Interacting with the ticket price page...
+2025-01-16 00:45:30,117 - INFO - Extracted per ticket price: US$ 
+2025-01-16 00:45:30,192 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:45:30,531 - INFO - Switched to new Compare tab.
+2025-01-16 00:45:36,381 - INFO - Listings container loaded successfully.
+2025-01-16 00:45:36,783 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:45:37,173 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:45:37,720 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:45:37,880 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:45:38,031 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:45:38,191 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:45:38,410 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:45:38,541 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:45:38,745 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:45:40,769 - INFO - Total listings scraped: 9
+2025-01-16 00:45:40,870 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:45:44,321 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:45:44,321 - INFO - Processing seat: 33 K St. NW - 0.7 mi from venue - Within 0.75 mi
+2025-01-16 00:45:44,923 - INFO - Selected seat option: 33 K St. NW - 0.7 mi from venue - Within 0.75 mi
+2025-01-16 00:45:47,291 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:45:47,300 - INFO - Interacting with the ticket price page...
+2025-01-16 00:45:49,710 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:45:49,820 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:45:50,174 - INFO - Switched to new Compare tab.
+2025-01-16 00:45:55,829 - INFO - Listings container loaded successfully.
+2025-01-16 00:45:56,147 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:45:56,470 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:45:56,620 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:45:57,142 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:45:57,290 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:45:57,454 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:45:57,665 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:45:57,830 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:45:58,036 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:46:00,070 - INFO - Total listings scraped: 9
+2025-01-16 00:46:00,175 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:46:03,381 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:46:03,381 - INFO - Processing seat: 72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:46:04,044 - INFO - Selected seat option: 72 - 975 F St. NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:46:06,361 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:46:06,370 - INFO - Interacting with the ticket price page...
+2025-01-16 00:46:08,732 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:46:08,800 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:46:09,183 - INFO - Switched to new Compare tab.
+2025-01-16 00:46:15,500 - INFO - Listings container loaded successfully.
+2025-01-16 00:46:15,791 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:46:15,971 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:46:16,214 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:46:16,772 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:46:16,900 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:46:17,055 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:46:17,254 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:46:17,400 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:46:17,621 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:46:19,650 - INFO - Total listings scraped: 9
+2025-01-16 00:46:19,768 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:46:23,043 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:46:23,043 - INFO - Processing seat: 81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:46:23,598 - INFO - Selected seat option: 81 - 505 9th St. NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:46:25,910 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:46:25,920 - INFO - Interacting with the ticket price page...
+2025-01-16 00:46:27,926 - INFO - Extracted per ticket price: US$ 34
+2025-01-16 00:46:28,000 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:46:28,334 - INFO - Switched to new Compare tab.
+2025-01-16 00:46:34,070 - INFO - Listings container loaded successfully.
+2025-01-16 00:46:34,348 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:46:34,520 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:46:34,741 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:46:34,901 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:46:35,440 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:46:35,573 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:46:35,730 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:46:35,860 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:46:36,150 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:46:38,180 - INFO - Total listings scraped: 9
+2025-01-16 00:46:38,290 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:46:41,211 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:46:41,211 - INFO - Processing seat: 98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi
+2025-01-16 00:46:41,930 - INFO - Selected seat option: 98 - 1101 M St. NW - 0.6 mi from venue - Within 0.75 mi
+2025-01-16 00:46:44,290 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:46:44,290 - INFO - Interacting with the ticket price page...
+2025-01-16 00:46:46,331 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:46:46,423 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:46:46,711 - INFO - Switched to new Compare tab.
+2025-01-16 00:46:52,210 - INFO - Listings container loaded successfully.
+2025-01-16 00:46:52,550 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:46:52,938 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:46:53,490 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:46:53,620 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:46:53,780 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:46:53,941 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:46:54,171 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:46:54,331 - INFO - Scraped listing: BALLSTON EXCHANGE PARKING GARAGE, $15, 1 pass, , 
+2025-01-16 00:46:54,510 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:46:56,541 - INFO - Total listings scraped: 9
+2025-01-16 00:46:56,650 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:46:59,550 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:46:59,550 - INFO - Processing seat: 116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:47:00,230 - INFO - Selected seat option: 116 - 733 10th St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:47:02,615 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:47:02,615 - INFO - Interacting with the ticket price page...
+2025-01-16 00:47:04,905 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:47:04,983 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:47:05,357 - INFO - Switched to new Compare tab.
+2025-01-16 00:47:12,140 - INFO - Listings container loaded successfully.
+2025-01-16 00:47:12,476 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:47:12,761 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:47:12,900 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:47:13,456 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:47:13,590 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:47:13,740 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:47:13,941 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:47:14,110 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:47:14,340 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:47:16,373 - INFO - Total listings scraped: 9
+2025-01-16 00:47:16,477 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:47:19,480 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:47:19,480 - INFO - Processing seat: 123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:47:20,168 - INFO - Selected seat option: 123 - 1152 15th St. NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:47:22,486 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:47:22,488 - INFO - Interacting with the ticket price page...
+2025-01-16 00:47:25,655 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 00:47:25,720 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:47:26,044 - INFO - Switched to new Compare tab.
+2025-01-16 00:47:31,525 - INFO - Listings container loaded successfully.
+2025-01-16 00:47:31,838 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:47:32,230 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:47:32,790 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:47:32,930 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:47:33,080 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:47:33,230 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:47:33,395 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:47:33,551 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:47:33,771 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:47:35,807 - INFO - Total listings scraped: 9
+2025-01-16 00:47:35,911 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:47:39,014 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:47:39,014 - INFO - Processing seat: 135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi
+2025-01-16 00:47:39,721 - INFO - Selected seat option: 135 - 601 13th St. NW - 0.4 mi from venue - Within 0.5 mi
+2025-01-16 00:47:42,034 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:47:42,034 - INFO - Interacting with the ticket price page...
+2025-01-16 00:47:44,243 - INFO - Extracted per ticket price: US$ 
+2025-01-16 00:47:44,322 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:47:44,634 - INFO - Switched to new Compare tab.
+2025-01-16 00:47:50,724 - INFO - Listings container loaded successfully.
+2025-01-16 00:47:51,080 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:47:51,492 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:47:52,050 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:47:52,311 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:47:52,440 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:47:52,570 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:47:52,770 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:47:52,910 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:47:53,116 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:47:55,141 - INFO - Total listings scraped: 9
+2025-01-16 00:47:55,234 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:47:58,410 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:47:58,410 - INFO - Processing seat: 140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:47:59,183 - INFO - Selected seat option: 140 - 901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:48:01,551 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:48:01,558 - INFO - Interacting with the ticket price page...
+2025-01-16 00:48:03,630 - INFO - Extracted per ticket price: US$ 25
+2025-01-16 00:48:03,724 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:48:04,036 - INFO - Switched to new Compare tab.
+2025-01-16 00:48:09,345 - INFO - Listings container loaded successfully.
+2025-01-16 00:48:10,127 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:48:10,961 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:48:11,107 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:48:11,272 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:48:11,449 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:48:11,650 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:48:11,882 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:48:12,070 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:48:12,281 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:48:14,310 - INFO - Total listings scraped: 9
+2025-01-16 00:48:14,423 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:48:17,782 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:48:17,782 - INFO - Processing seat: 144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:48:18,515 - INFO - Selected seat option: 144 - 1501 K St. NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:48:20,870 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:48:20,870 - INFO - Interacting with the ticket price page...
+2025-01-16 00:48:23,050 - INFO - Extracted per ticket price: US$ 25
+2025-01-16 00:48:23,111 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:48:23,476 - INFO - Switched to new Compare tab.
+2025-01-16 00:48:29,850 - INFO - Listings container loaded successfully.
+2025-01-16 00:48:30,167 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:48:30,574 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:48:31,120 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:48:31,260 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:48:31,413 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:48:31,588 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:48:31,816 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:48:31,999 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:48:32,227 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:48:34,250 - INFO - Total listings scraped: 9
+2025-01-16 00:48:34,345 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:48:37,308 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:48:37,308 - INFO - Processing seat: 425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:48:38,135 - INFO - Selected seat option: 425 Massachusetts Ave. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:48:40,463 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:48:40,466 - INFO - Interacting with the ticket price page...
+2025-01-16 00:48:42,690 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:48:42,780 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:48:43,146 - INFO - Switched to new Compare tab.
+2025-01-16 00:48:48,346 - INFO - Listings container loaded successfully.
+2025-01-16 00:48:49,773 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:48:49,936 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:48:50,087 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:48:50,246 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:48:50,414 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:48:50,591 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:48:50,821 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:48:50,996 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:48:51,211 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:48:53,242 - INFO - Total listings scraped: 9
+2025-01-16 00:48:53,342 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:48:56,316 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:48:56,316 - INFO - Processing seat: 455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:48:57,141 - INFO - Selected seat option: 455 Massachusetts Ave. - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:48:59,570 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:48:59,570 - INFO - Interacting with the ticket price page...
+2025-01-16 00:49:02,318 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:49:02,415 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:49:02,751 - INFO - Switched to new Compare tab.
+2025-01-16 00:49:08,543 - INFO - Listings container loaded successfully.
+2025-01-16 00:49:08,870 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:49:09,222 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:49:09,767 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:49:09,900 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:49:10,051 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:49:10,195 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:49:10,370 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:49:10,520 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:49:10,730 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:49:12,763 - INFO - Total listings scraped: 9
+2025-01-16 00:49:12,878 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:49:15,931 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:49:15,931 - INFO - Processing seat: 524 11th St NW 0.5 mi from venue - Within 0.5 mi
+2025-01-16 00:49:16,710 - INFO - Selected seat option: 524 11th St NW 0.5 mi from venue - Within 0.5 mi
+2025-01-16 00:49:19,062 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:49:19,063 - INFO - Interacting with the ticket price page...
+2025-01-16 00:49:21,488 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 00:49:21,578 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:49:21,899 - INFO - Switched to new Compare tab.
+2025-01-16 00:49:27,665 - INFO - Listings container loaded successfully.
+2025-01-16 00:49:27,960 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:49:28,231 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:49:28,390 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:49:28,933 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:49:29,070 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:49:29,204 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:49:29,391 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:49:29,550 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:49:29,767 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:49:31,795 - INFO - Total listings scraped: 9
+2025-01-16 00:49:31,896 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:49:35,521 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:49:35,521 - INFO - Processing seat: 532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+2025-01-16 00:49:36,334 - INFO - Selected seat option: 532 13th St. NW 1301 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+2025-01-16 00:49:38,669 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:49:38,671 - INFO - Interacting with the ticket price page...
+2025-01-16 00:49:40,920 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 00:49:40,995 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:49:41,340 - INFO - Switched to new Compare tab.
+2025-01-16 00:49:46,895 - INFO - Listings container loaded successfully.
+2025-01-16 00:49:47,211 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:49:47,560 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:49:47,700 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:49:48,467 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:49:48,697 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:49:48,865 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:49:49,110 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:49:49,256 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:49:49,441 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:49:51,470 - INFO - Total listings scraped: 9
+2025-01-16 00:49:51,578 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:49:54,760 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:49:54,760 - INFO - Processing seat: 560 8th St NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:49:55,710 - INFO - Selected seat option: 560 8th St NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:49:58,084 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:49:58,084 - INFO - Interacting with the ticket price page...
+2025-01-16 00:50:01,217 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 00:50:01,320 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:50:01,682 - INFO - Switched to new Compare tab.
+2025-01-16 00:50:07,876 - INFO - Listings container loaded successfully.
+2025-01-16 00:50:08,234 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:50:08,513 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:50:08,651 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:50:09,224 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:50:09,353 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:50:09,500 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:50:09,721 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:50:09,901 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:50:10,113 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:50:12,141 - INFO - Total listings scraped: 9
+2025-01-16 00:50:12,238 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:50:15,161 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:50:15,161 - INFO - Processing seat: 573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+2025-01-16 00:50:16,074 - INFO - Selected seat option: 573 13th St. NW 1331 Pennsylvania Ave NW - 0.5 mi from venue - Within 0.5 mi
+2025-01-16 00:50:18,461 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:50:18,464 - INFO - Interacting with the ticket price page...
+2025-01-16 00:50:20,561 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 00:50:20,670 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:50:21,009 - INFO - Switched to new Compare tab.
+2025-01-16 00:50:26,623 - INFO - Listings container loaded successfully.
+2025-01-16 00:50:26,983 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:50:27,314 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:50:27,451 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:50:28,003 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:50:28,141 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:50:28,281 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:50:28,451 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:50:28,588 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:50:28,750 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:50:30,781 - INFO - Total listings scraped: 9
+2025-01-16 00:50:30,879 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:50:33,993 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:50:33,993 - INFO - Processing seat: 600 E St. NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:50:34,940 - INFO - Selected seat option: 600 E St. NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:50:37,277 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:50:37,277 - INFO - Interacting with the ticket price page...
+2025-01-16 00:50:40,020 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:50:40,095 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:50:40,437 - INFO - Switched to new Compare tab.
+2025-01-16 00:50:46,072 - INFO - Listings container loaded successfully.
+2025-01-16 00:50:46,407 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:50:46,856 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:50:47,410 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:50:47,530 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:50:47,680 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:50:47,815 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:50:48,020 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:50:48,284 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:50:48,471 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:50:50,494 - INFO - Total listings scraped: 9
+2025-01-16 00:50:50,592 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:50:53,646 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:50:53,646 - INFO - Processing seat: 600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi
+2025-01-16 00:50:54,563 - INFO - Selected seat option: 600 New York Ave NW - 0.4 mi from venue - Within 0.5 mi
+2025-01-16 00:50:56,920 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:50:56,931 - INFO - Interacting with the ticket price page...
+2025-01-16 00:50:59,271 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 00:50:59,359 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:50:59,727 - INFO - Switched to new Compare tab.
+2025-01-16 00:51:05,062 - INFO - Listings container loaded successfully.
+2025-01-16 00:51:05,353 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:51:05,770 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:51:06,351 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:51:06,503 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:51:06,644 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:51:06,772 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:51:06,953 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:51:07,081 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:51:07,265 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:51:09,301 - INFO - Total listings scraped: 9
+2025-01-16 00:51:09,424 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:51:12,520 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:51:12,524 - INFO - Processing seat: 601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:51:13,441 - INFO - Selected seat option: 601 Pennsylvania Ave. - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:51:15,766 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:51:15,766 - INFO - Interacting with the ticket price page...
+2025-01-16 00:51:17,911 - INFO - Extracted per ticket price: US$ 25
+2025-01-16 00:51:18,004 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:51:18,339 - INFO - Switched to new Compare tab.
+2025-01-16 00:51:23,637 - INFO - Listings container loaded successfully.
+2025-01-16 00:51:23,942 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:51:24,209 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:51:24,370 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:51:24,875 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:51:25,060 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:51:25,195 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:51:25,390 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:51:25,552 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:51:25,742 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:51:27,773 - INFO - Total listings scraped: 9
+2025-01-16 00:51:27,874 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:51:30,751 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:51:30,751 - INFO - Processing seat: 608 10th St NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:51:31,584 - INFO - Selected seat option: 608 10th St NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:51:33,922 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:51:33,922 - INFO - Interacting with the ticket price page...
+2025-01-16 00:51:35,980 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:51:36,062 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:51:36,432 - INFO - Switched to new Compare tab.
+2025-01-16 00:51:42,062 - INFO - Listings container loaded successfully.
+2025-01-16 00:51:42,385 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:51:42,677 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:51:42,830 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:51:43,380 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:51:43,540 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:51:43,745 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:51:43,925 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:51:44,071 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:51:44,243 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:51:46,272 - INFO - Total listings scraped: 9
+2025-01-16 00:51:46,371 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:51:49,741 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:51:49,741 - INFO - Processing seat: 609 10th St NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:51:50,665 - INFO - Selected seat option: 609 10th St NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:51:53,001 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:51:53,005 - INFO - Interacting with the ticket price page...
+2025-01-16 00:51:55,245 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:51:55,350 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:51:55,695 - INFO - Switched to new Compare tab.
+2025-01-16 00:52:01,504 - INFO - Listings container loaded successfully.
+2025-01-16 00:52:01,821 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:52:02,103 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:52:02,263 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:52:02,830 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:52:02,974 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:52:03,134 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:52:03,302 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:52:03,447 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:52:03,632 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:52:05,671 - INFO - Total listings scraped: 9
+2025-01-16 00:52:05,782 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:52:08,821 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:52:08,821 - INFO - Processing seat: 612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:52:09,836 - INFO - Selected seat option: 612 9th St. NW. - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:52:12,174 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:52:12,174 - INFO - Interacting with the ticket price page...
+2025-01-16 00:52:18,021 - INFO - Extracted per ticket price: US$ 
+2025-01-16 00:52:18,103 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:52:18,450 - INFO - Switched to new Compare tab.
+2025-01-16 00:52:24,575 - INFO - Listings container loaded successfully.
+2025-01-16 00:52:24,880 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:52:25,255 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:52:25,408 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:52:26,040 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:52:26,188 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:52:26,347 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:52:26,533 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:52:26,683 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:52:26,874 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:52:28,900 - INFO - Total listings scraped: 9
+2025-01-16 00:52:29,007 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:52:31,897 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:52:31,897 - INFO - Processing seat: 625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:52:32,896 - INFO - Selected seat option: 625 Indiana Ave NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:52:35,236 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:52:35,236 - INFO - Interacting with the ticket price page...
+2025-01-16 00:52:37,311 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:52:37,374 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:52:37,802 - INFO - Switched to new Compare tab.
+2025-01-16 00:52:43,107 - INFO - Listings container loaded successfully.
+2025-01-16 00:52:43,425 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:52:43,720 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:52:43,891 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:52:44,400 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:52:44,540 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:52:44,683 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:52:44,880 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:52:45,041 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:52:45,224 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:52:47,257 - INFO - Total listings scraped: 9
+2025-01-16 00:52:47,377 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:52:50,721 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:52:50,721 - INFO - Processing seat: 650 Mass Ave - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:52:51,802 - INFO - Selected seat option: 650 Mass Ave - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:52:54,171 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:52:54,171 - INFO - Interacting with the ticket price page...
+2025-01-16 00:52:56,597 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:52:56,701 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:52:57,016 - INFO - Switched to new Compare tab.
+2025-01-16 00:53:02,385 - INFO - Listings container loaded successfully.
+2025-01-16 00:53:02,800 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:53:03,209 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:53:03,772 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:53:03,910 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:53:04,058 - INFO - Scraped listing: Carroll Square Garage - Valet, $14, 1 pass, , 
+2025-01-16 00:53:04,221 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:53:04,443 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:53:04,615 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:53:04,810 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:53:06,841 - INFO - Total listings scraped: 9
+2025-01-16 00:53:06,951 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:53:10,060 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:53:10,060 - INFO - Processing seat: 716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:53:11,181 - INFO - Selected seat option: 716 10th St. NW 1001 G St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:53:13,530 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:53:13,530 - INFO - Interacting with the ticket price page...
+2025-01-16 00:53:19,292 - INFO - Extracted per ticket price: US$ 
+2025-01-16 00:53:19,381 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:53:19,695 - INFO - Switched to new Compare tab.
+2025-01-16 00:53:25,296 - INFO - Listings container loaded successfully.
+2025-01-16 00:53:25,581 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:53:25,762 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:53:26,001 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:53:26,584 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:53:26,734 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:53:26,882 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:53:27,050 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:53:27,186 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:53:27,396 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:53:29,431 - INFO - Total listings scraped: 9
+2025-01-16 00:53:29,539 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:53:32,410 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:53:32,410 - INFO - Processing seat: 732 6th St. NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:53:33,492 - INFO - Selected seat option: 732 6th St. NW - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:53:35,831 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:53:35,835 - INFO - Interacting with the ticket price page...
+2025-01-16 00:53:38,050 - INFO - Extracted per ticket price: US$ 25
+2025-01-16 00:53:38,154 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:53:38,451 - INFO - Switched to new Compare tab.
+2025-01-16 00:53:43,781 - INFO - Listings container loaded successfully.
+2025-01-16 00:53:44,096 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:53:44,450 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:53:44,600 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:53:45,110 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:53:45,240 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:53:45,391 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:53:45,594 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:53:45,772 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:53:45,992 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:53:48,021 - INFO - Total listings scraped: 9
+2025-01-16 00:53:48,119 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:53:51,401 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:53:51,401 - INFO - Processing seat: 818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi
+2025-01-16 00:53:52,500 - INFO - Selected seat option: 818 Connecticut Ave. NW - 1 mi from venue - Within 1.0 mi
+2025-01-16 00:53:54,825 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:53:54,827 - INFO - Interacting with the ticket price page...
+2025-01-16 00:53:57,300 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 00:53:57,411 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:53:57,910 - INFO - Switched to new Compare tab.
+2025-01-16 00:54:03,171 - INFO - Listings container loaded successfully.
+2025-01-16 00:54:03,490 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:54:03,921 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:54:04,436 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:54:04,570 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:54:04,711 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:54:04,834 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:54:05,001 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:54:05,171 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:54:05,396 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:54:07,423 - INFO - Total listings scraped: 9
+2025-01-16 00:54:07,541 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:54:10,563 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:54:10,563 - INFO - Processing seat: 900 G St. NW Garage - Within 0.25 mi
+2025-01-16 00:54:11,637 - INFO - Selected seat option: 900 G St. NW Garage - Within 0.25 mi
+2025-01-16 00:54:14,001 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:54:14,003 - INFO - Interacting with the ticket price page...
+2025-01-16 00:54:16,032 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:54:16,111 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:54:16,461 - INFO - Switched to new Compare tab.
+2025-01-16 00:54:21,851 - INFO - Listings container loaded successfully.
+2025-01-16 00:54:22,178 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:54:22,580 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:54:23,102 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:54:23,233 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:54:23,374 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:54:23,524 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:54:23,700 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:54:23,852 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:54:24,051 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:54:26,084 - INFO - Total listings scraped: 9
+2025-01-16 00:54:26,193 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:54:29,184 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:54:29,184 - INFO - Processing seat: 901 5th St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:54:30,484 - INFO - Selected seat option: 901 5th St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 00:54:32,776 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:54:32,776 - INFO - Interacting with the ticket price page...
+2025-01-16 00:54:34,949 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:54:35,036 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:54:35,355 - INFO - Switched to new Compare tab.
+2025-01-16 00:54:40,721 - INFO - Listings container loaded successfully.
+2025-01-16 00:54:41,031 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:54:41,371 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:54:41,521 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:54:42,081 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:54:42,221 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:54:42,351 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:54:42,520 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:54:42,691 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:54:42,901 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:54:44,946 - INFO - Total listings scraped: 9
+2025-01-16 00:54:45,059 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:54:48,477 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:54:48,477 - INFO - Processing seat: 901 7th St. NW - Within 0.25 mi
+2025-01-16 00:54:49,907 - INFO - Selected seat option: 901 7th St. NW - Within 0.25 mi
+2025-01-16 00:54:52,238 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:54:52,241 - INFO - Interacting with the ticket price page...
+2025-01-16 00:54:54,881 - INFO - Extracted per ticket price: US$ 30
+2025-01-16 00:54:54,955 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:54:55,306 - INFO - Switched to new Compare tab.
+2025-01-16 00:55:01,301 - INFO - Listings container loaded successfully.
+2025-01-16 00:55:01,580 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:55:01,751 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:55:02,041 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:55:02,621 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:55:02,771 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:55:02,921 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:55:03,103 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:55:03,247 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:55:03,420 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:55:05,455 - INFO - Total listings scraped: 9
+2025-01-16 00:55:05,578 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:55:08,821 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:55:08,821 - INFO - Processing seat: 901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:55:10,010 - INFO - Selected seat option: 901 E Street NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:55:12,341 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:55:12,348 - INFO - Interacting with the ticket price page...
+2025-01-16 00:55:14,391 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:55:14,450 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:55:14,875 - INFO - Switched to new Compare tab.
+2025-01-16 00:55:20,161 - INFO - Listings container loaded successfully.
+2025-01-16 00:55:20,476 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:55:20,778 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:55:20,914 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:55:21,471 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:55:21,610 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:55:21,745 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:55:21,921 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:55:22,071 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:55:22,271 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:55:24,301 - INFO - Total listings scraped: 9
+2025-01-16 00:55:24,406 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:55:27,331 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:55:27,331 - INFO - Processing seat: 909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:55:28,542 - INFO - Selected seat option: 909 7th St. NW. - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:55:30,904 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:55:30,907 - INFO - Interacting with the ticket price page...
+2025-01-16 00:55:33,203 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:55:33,331 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:55:33,623 - INFO - Switched to new Compare tab.
+2025-01-16 00:55:39,816 - INFO - Listings container loaded successfully.
+2025-01-16 00:55:40,132 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:55:40,436 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:55:40,623 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:55:41,141 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:55:41,291 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:55:41,465 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:55:41,691 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:55:41,851 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:55:42,067 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:55:44,091 - INFO - Total listings scraped: 9
+2025-01-16 00:55:44,196 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:55:47,108 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:55:47,108 - INFO - Processing seat: 916 H St. NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:55:48,331 - INFO - Selected seat option: 916 H St. NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:55:50,664 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:55:50,673 - INFO - Interacting with the ticket price page...
+2025-01-16 00:55:52,963 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:55:53,075 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:55:53,490 - INFO - Switched to new Compare tab.
+2025-01-16 00:55:59,011 - INFO - Listings container loaded successfully.
+2025-01-16 00:55:59,334 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:55:59,686 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:55:59,821 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:56:00,400 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:56:00,536 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:56:00,716 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:56:00,911 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:56:01,087 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:56:01,280 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:56:03,311 - INFO - Total listings scraped: 9
+2025-01-16 00:56:03,417 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:56:06,893 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:56:06,893 - INFO - Processing seat: 1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:56:08,068 - INFO - Selected seat option: 1090 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:56:10,411 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:56:10,420 - INFO - Interacting with the ticket price page...
+2025-01-16 00:56:12,597 - INFO - Extracted per ticket price: US$ 34
+2025-01-16 00:56:12,681 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:56:12,989 - INFO - Switched to new Compare tab.
+2025-01-16 00:56:18,431 - INFO - Listings container loaded successfully.
+2025-01-16 00:56:18,741 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:56:19,167 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:56:19,701 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:56:19,835 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:56:19,971 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:56:20,123 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:56:20,291 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:56:20,453 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:56:20,665 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:56:22,695 - INFO - Total listings scraped: 9
+2025-01-16 00:56:22,800 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:56:25,881 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:56:25,891 - INFO - Processing seat: 1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:56:27,170 - INFO - Selected seat option: 1120 Vermont Ave NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:56:29,481 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:56:29,481 - INFO - Interacting with the ticket price page...
+2025-01-16 00:56:32,015 - INFO - Extracted per ticket price: US$ 30
+2025-01-16 00:56:32,111 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:56:32,418 - INFO - Switched to new Compare tab.
+2025-01-16 00:56:38,391 - INFO - Listings container loaded successfully.
+2025-01-16 00:56:39,000 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:56:39,251 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:56:39,961 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:56:40,091 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:56:40,242 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:56:40,410 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:56:40,631 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:56:40,791 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:56:41,022 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:56:43,052 - INFO - Total listings scraped: 9
+2025-01-16 00:56:43,166 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:56:46,131 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:56:46,131 - INFO - Processing seat: 1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:56:47,352 - INFO - Selected seat option: 1125 15th St. NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:56:49,681 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:56:49,681 - INFO - Interacting with the ticket price page...
+2025-01-16 00:56:51,780 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 00:56:51,852 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:56:52,197 - INFO - Switched to new Compare tab.
+2025-01-16 00:56:57,770 - INFO - Listings container loaded successfully.
+2025-01-16 00:56:58,091 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:56:58,346 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:56:58,503 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:56:59,010 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:56:59,140 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:56:59,280 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:56:59,469 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:56:59,610 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:56:59,801 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:57:01,828 - INFO - Total listings scraped: 9
+2025-01-16 00:57:01,931 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:57:05,041 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:57:05,041 - INFO - Processing seat: 1441 L St NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:57:06,295 - INFO - Selected seat option: 1441 L St NW - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 00:57:08,622 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:57:08,633 - INFO - Interacting with the ticket price page...
+2025-01-16 00:57:10,794 - INFO - Extracted per ticket price: US$ 34
+2025-01-16 00:57:10,894 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:57:11,228 - INFO - Switched to new Compare tab.
+2025-01-16 00:57:17,092 - INFO - Listings container loaded successfully.
+2025-01-16 00:57:17,401 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:57:17,646 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:57:17,810 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:57:18,426 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:57:18,553 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:57:18,710 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:57:18,913 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:57:19,105 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:57:19,442 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:57:21,473 - INFO - Total listings scraped: 9
+2025-01-16 00:57:21,589 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:57:24,621 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:57:24,621 - INFO - Processing seat: 1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi
+2025-01-16 00:57:25,903 - INFO - Selected seat option: 1500 Massachusetts Ave. NW - 1 mi from venue - Within 1.0 mi
+2025-01-16 00:57:28,230 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:57:28,233 - INFO - Interacting with the ticket price page...
+2025-01-16 00:57:30,389 - INFO - Extracted per ticket price: US$ 25
+2025-01-16 00:57:30,472 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:57:30,783 - INFO - Switched to new Compare tab.
+2025-01-16 00:57:36,164 - INFO - Listings container loaded successfully.
+2025-01-16 00:57:36,471 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:57:36,871 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:57:37,421 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:57:37,541 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:57:37,691 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:57:37,821 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:57:37,990 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:57:38,131 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:57:38,327 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:57:40,355 - INFO - Total listings scraped: 9
+2025-01-16 00:57:40,464 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:57:43,381 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:57:43,381 - INFO - Processing seat: 1602 L St. NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:57:44,611 - INFO - Selected seat option: 1602 L St. NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:57:46,931 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:57:46,934 - INFO - Interacting with the ticket price page...
+2025-01-16 00:57:49,201 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:57:49,282 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:57:49,671 - INFO - Switched to new Compare tab.
+2025-01-16 00:57:55,741 - INFO - Listings container loaded successfully.
+2025-01-16 00:57:56,021 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:57:56,211 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:57:56,553 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:57:57,071 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:57:57,231 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:57:57,401 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:57:57,611 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:57:57,774 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:57:57,991 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:58:00,034 - INFO - Total listings scraped: 9
+2025-01-16 00:58:00,135 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:58:03,051 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:58:03,054 - INFO - Processing seat: 1620 I St NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:58:04,391 - INFO - Selected seat option: 1620 I St NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 00:58:06,707 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:58:06,710 - INFO - Interacting with the ticket price page...
+2025-01-16 00:58:09,465 - INFO - Extracted per ticket price: US$ 
+2025-01-16 00:58:09,551 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:58:09,869 - INFO - Switched to new Compare tab.
+2025-01-16 00:58:15,187 - INFO - Listings container loaded successfully.
+2025-01-16 00:58:15,501 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:58:15,754 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:58:15,928 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:58:16,463 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:58:16,587 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:58:16,711 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:58:16,886 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:58:17,021 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:58:17,191 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:58:19,211 - INFO - Total listings scraped: 9
+2025-01-16 00:58:19,310 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:58:22,271 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:58:22,271 - INFO - Processing seat: Capital One Arena Garage - Arena Parking Garage
+2025-01-16 00:58:23,711 - INFO - Selected seat option: Capital One Arena Garage - Arena Parking Garage
+2025-01-16 00:58:26,041 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:58:26,041 - INFO - Interacting with the ticket price page...
+2025-01-16 00:58:28,241 - INFO - Extracted per ticket price: US$ 34
+2025-01-16 00:58:28,341 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:58:28,644 - INFO - Switched to new Compare tab.
+2025-01-16 00:58:34,472 - INFO - Listings container loaded successfully.
+2025-01-16 00:58:34,920 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:58:36,283 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:58:36,431 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:58:36,581 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:58:36,751 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:58:36,901 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:58:37,079 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:58:37,201 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:58:37,381 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:58:39,401 - INFO - Total listings scraped: 9
+2025-01-16 00:58:39,496 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:58:42,562 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:58:42,562 - INFO - Processing seat: Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:58:43,863 - INFO - Selected seat option: Courtyard Marriot 900 F St. NW - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 00:58:46,211 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:58:46,213 - INFO - Interacting with the ticket price page...
+2025-01-16 00:58:48,359 - INFO - Extracted per ticket price: US$ 22
+2025-01-16 00:58:48,462 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:58:48,821 - INFO - Switched to new Compare tab.
+2025-01-16 00:58:54,017 - INFO - Listings container loaded successfully.
+2025-01-16 00:58:54,351 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:58:54,681 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:58:54,835 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:58:55,380 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:58:55,522 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:58:55,853 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:58:56,111 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:58:56,276 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:58:56,496 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:58:58,521 - INFO - Total listings scraped: 9
+2025-01-16 00:58:58,644 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:59:01,575 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:59:01,575 - INFO - Processing seat: Gallery Place 6th St NW - Within 0.25 mi
+2025-01-16 00:59:03,106 - INFO - Selected seat option: Gallery Place 6th St NW - Within 0.25 mi
+2025-01-16 00:59:05,450 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:59:05,452 - INFO - Interacting with the ticket price page...
+2025-01-16 00:59:07,510 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 00:59:07,597 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:59:07,891 - INFO - Switched to new Compare tab.
+2025-01-16 00:59:13,412 - INFO - Listings container loaded successfully.
+2025-01-16 00:59:13,703 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:59:13,899 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:59:14,141 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:59:14,651 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:59:14,792 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:59:14,928 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:59:15,111 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:59:15,262 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:59:15,452 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:59:17,481 - INFO - Total listings scraped: 9
+2025-01-16 00:59:17,602 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:59:20,581 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:59:20,581 - INFO - Processing seat: Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi
+2025-01-16 00:59:22,091 - INFO - Selected seat option: Hilton Garden Inn 815 14th St. NW - 0.6 mi from venue - Within 0.75 mi
+2025-01-16 00:59:24,456 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:59:24,458 - INFO - Interacting with the ticket price page...
+2025-01-16 00:59:26,526 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 00:59:26,611 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:59:26,942 - INFO - Switched to new Compare tab.
+2025-01-16 00:59:32,431 - INFO - Listings container loaded successfully.
+2025-01-16 00:59:32,741 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:59:33,103 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:59:33,251 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:59:33,803 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:59:33,961 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:59:34,131 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:59:34,331 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:59:34,509 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:59:34,714 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:59:36,753 - INFO - Total listings scraped: 9
+2025-01-16 00:59:36,875 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:59:39,923 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:59:39,923 - INFO - Processing seat: Hotel Monaco - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:59:41,497 - INFO - Selected seat option: Hotel Monaco - 0.1 mi from venue - Within 0.25 mi
+2025-01-16 00:59:43,865 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 00:59:43,868 - INFO - Interacting with the ticket price page...
+2025-01-16 00:59:46,069 - INFO - Extracted per ticket price: US$ 51
+2025-01-16 00:59:46,162 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 00:59:46,461 - INFO - Switched to new Compare tab.
+2025-01-16 00:59:51,861 - INFO - Listings container loaded successfully.
+2025-01-16 00:59:52,169 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 00:59:52,531 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 00:59:52,671 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 00:59:53,260 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 00:59:53,391 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 00:59:53,521 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 00:59:53,701 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 00:59:53,852 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 00:59:54,072 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 00:59:56,101 - INFO - Total listings scraped: 9
+2025-01-16 00:59:56,227 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 00:59:59,156 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 00:59:59,156 - INFO - Processing seat: Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 01:00:00,582 - INFO - Selected seat option: Loews Madison Hotel - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 01:00:02,932 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:00:02,934 - INFO - Interacting with the ticket price page...
+2025-01-16 01:00:04,965 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 01:00:05,074 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:00:05,401 - INFO - Switched to new Compare tab.
+2025-01-16 01:00:11,211 - INFO - Listings container loaded successfully.
+2025-01-16 01:00:11,518 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:00:11,785 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:00:11,946 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:00:12,461 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:00:12,607 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:00:12,752 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:00:12,958 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:00:13,113 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:00:13,311 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:00:15,343 - INFO - Total listings scraped: 9
+2025-01-16 01:00:15,449 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:00:18,731 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:00:18,731 - INFO - Processing seat: Market Square - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 01:00:20,689 - INFO - Selected seat option: Market Square - 0.2 mi from venue - Within 0.25 mi
+2025-01-16 01:00:23,008 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:00:23,011 - INFO - Interacting with the ticket price page...
+2025-01-16 01:00:25,201 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 01:00:25,287 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:00:25,626 - INFO - Switched to new Compare tab.
+2025-01-16 01:00:31,125 - INFO - Listings container loaded successfully.
+2025-01-16 01:00:31,438 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:00:31,791 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:00:31,934 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:00:32,471 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:00:32,606 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:00:32,746 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:00:32,948 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:00:33,121 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:00:33,341 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:00:35,366 - INFO - Total listings scraped: 9
+2025-01-16 01:00:35,479 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:00:38,427 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:00:38,427 - INFO - Processing seat: Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 01:00:40,056 - INFO - Selected seat option: Renaissance Hotel 999 9th St. NW - 0.3 mi from venue - Within 0.5 mi
+2025-01-16 01:00:42,411 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:00:42,419 - INFO - Interacting with the ticket price page...
+2025-01-16 01:00:44,611 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 01:00:44,683 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:00:45,013 - INFO - Switched to new Compare tab.
+2025-01-16 01:00:51,483 - INFO - Listings container loaded successfully.
+2025-01-16 01:00:51,831 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:00:52,236 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:00:52,801 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:00:52,931 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:00:53,081 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:00:53,225 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:00:53,401 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:00:53,551 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:00:53,746 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:00:55,776 - INFO - Total listings scraped: 9
+2025-01-16 01:00:55,874 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:00:58,822 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:00:58,822 - INFO - Processing seat: The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 01:01:00,491 - INFO - Selected seat option: The Capital Hilton 1001 16th St. NW - 0.9 mi from venue - Within 1.0 mi
+2025-01-16 01:01:02,841 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:01:02,841 - INFO - Interacting with the ticket price page...
+2025-01-16 01:01:05,321 - INFO - Extracted per ticket price: US$ 31
+2025-01-16 01:01:05,417 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:01:05,748 - INFO - Switched to new Compare tab.
+2025-01-16 01:01:11,271 - INFO - Listings container loaded successfully.
+2025-01-16 01:01:11,577 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:01:11,854 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:01:12,011 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:01:12,607 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:01:12,732 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:01:12,881 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:01:13,067 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:01:13,228 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:01:13,414 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:01:15,441 - INFO - Total listings scraped: 9
+2025-01-16 01:01:15,550 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:01:19,301 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:01:19,301 - INFO - Processing seat: Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 01:01:20,831 - INFO - Selected seat option: Washington DC - Westin City Center Hotel - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 01:01:23,168 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:01:23,171 - INFO - Interacting with the ticket price page...
+2025-01-16 01:01:25,903 - INFO - Extracted per ticket price: US$ 26
+2025-01-16 01:01:25,971 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:01:26,327 - INFO - Switched to new Compare tab.
+2025-01-16 01:01:32,324 - INFO - Listings container loaded successfully.
+2025-01-16 01:01:32,665 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:01:33,031 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:01:33,541 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:01:33,671 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:01:33,811 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:01:33,984 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:01:34,191 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:01:34,373 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:01:34,584 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:01:36,611 - INFO - Total listings scraped: 9
+2025-01-16 01:01:36,723 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:01:39,721 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:01:39,721 - INFO - Processing seat: Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi
+2025-01-16 01:01:41,341 - INFO - Selected seat option: Washington Marriott at Metro Center 775 12th St. NW - 0.4 mi from venue - Within 0.5 mi
+2025-01-16 01:01:43,691 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:01:43,691 - INFO - Interacting with the ticket price page...
+2025-01-16 01:01:45,856 - INFO - Extracted per ticket price: US$ 
+2025-01-16 01:01:45,943 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:01:46,259 - INFO - Switched to new Compare tab.
+2025-01-16 01:01:52,821 - INFO - Listings container loaded successfully.
+2025-01-16 01:01:53,141 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:01:53,452 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:01:53,611 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:01:54,151 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:01:54,281 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:01:54,428 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:01:54,641 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:01:54,783 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:01:54,971 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:01:57,004 - INFO - Total listings scraped: 9
+2025-01-16 01:01:57,107 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:02:00,025 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:02:00,025 - INFO - Processing seat: Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 01:02:01,624 - INFO - Selected seat option: Washington Plaza 10 Thomas Circle NW. - 0.8 mi from venue - Within 1.0 mi
+2025-01-16 01:02:03,951 - INFO - Clicked 'Continue' after seat selection.
+2025-01-16 01:02:03,951 - INFO - Interacting with the ticket price page...
+2025-01-16 01:02:08,611 - INFO - Extracted per ticket price: US$ 18
+2025-01-16 01:02:08,702 - INFO - Clicking 'Compare similar tickets'.
+2025-01-16 01:02:09,011 - INFO - Switched to new Compare tab.
+2025-01-16 01:02:15,164 - INFO - Listings container loaded successfully.
+2025-01-16 01:02:15,474 - INFO - Scraped listing: Parking within .3 miles from venue, $12, 1 pass, , 
+2025-01-16 01:02:15,885 - INFO - Scraped listing: 650 Mass Ave - 0.2 mi from venue, $12, 1 pass, 9.2, Amazing
+2025-01-16 01:02:16,413 - INFO - Scraped listing: CARROLL SQUARE GARAGE - VALET, $13, 1 pass, , 
+2025-01-16 01:02:16,551 - INFO - Scraped listing: 733 10TH ST, $13, 1 pass, , 
+2025-01-16 01:02:16,690 - INFO - Scraped listing: 734 11TH ST. NW, $13, 1 pass, , 
+2025-01-16 01:02:16,836 - INFO - Scraped listing: 901 E. ST NW GARAGE, $14, 1 pass, , 
+2025-01-16 01:02:17,001 - INFO - Scraped listing: 609 10th St NW - 0.3 mi from venue, $15, 1 pass, 7.3, Great
+2025-01-16 01:02:17,147 - INFO - Scraped listing: 901 E ST NW, $16, 1 pass, , 
+2025-01-16 01:02:17,336 - INFO - Scraped listing: 909 7th St. NW. - 0.2 mi from venue, $16, 1 pass, 9.8, Amazing
+2025-01-16 01:02:19,375 - INFO - Total listings scraped: 9
+2025-01-16 01:02:19,485 - INFO - Closed Compare tab, back on Price Page tab.
+2025-01-16 01:02:22,976 - INFO - Back navigation success: seat dropdown is visible.
+2025-01-16 01:02:23,059 - INFO - Closed the event tab and switched back to main listing.
+2025-01-16 01:02:23,059 - INFO - Processing event #8: {'date': 'JAN 25', 'time': '1:00 PM', 'name': 'PARKING PASSES ONLY Monster Jam', 'location': 'Washington, DC, USA'}
+2025-01-16 01:02:23,359 - INFO - Clicked on the event at index 8.
+2025-01-16 01:02:23,393 - INFO - Switched to new event tab.
+2025-01-16 01:02:25,306 - INFO - Selected 1 ticket.
+2025-01-16 01:02:25,612 - INFO - Clicked first Continue.
+2025-01-16 01:02:27,533 - INFO - Clicked second Continue.
+2025-01-16 01:02:49,436 - ERROR - Error in do_quantity_and_ticket_type: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A1A380D5+2992373]
+	(No symbol) [0x00007FF7A16CBFD0]
+	(No symbol) [0x00007FF7A156590A]
+	(No symbol) [0x00007FF7A15B926E]
+	(No symbol) [0x00007FF7A15B955C]
+	(No symbol) [0x00007FF7A16027D7]
+	(No symbol) [0x00007FF7A15DF3AF]
+	(No symbol) [0x00007FF7A15FF584]
+	(No symbol) [0x00007FF7A15DF113]
+	(No symbol) [0x00007FF7A15AA918]
+	(No symbol) [0x00007FF7A15ABA81]
+	GetHandleVerifier [0x00007FF7A1A96A2D+3379789]
+	GetHandleVerifier [0x00007FF7A1AAC32D+3468109]
+	GetHandleVerifier [0x00007FF7A1AA0043+3418211]
+	GetHandleVerifier [0x00007FF7A182C78B+847787]
+	(No symbol) [0x00007FF7A16D757F]
+	(No symbol) [0x00007FF7A16D2FC4]
+	(No symbol) [0x00007FF7A16D315D]
+	(No symbol) [0x00007FF7A16C2979]
+	BaseThreadInitThunk [0x00007FF95786259D+29]
+	RtlUserThreadStart [0x00007FF95934AF38+40]
+Traceback (most recent call last):
+  File "D:\LUMS\Snr\stubhub\runthis.py", line 413, in do_quantity_and_ticket_type
+    e_tix = WebDriverWait(driver, 20).until(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A1A380D5+2992373]
+	(No symbol) [0x00007FF7A16CBFD0]
+	(No symbol) [0x00007FF7A156590A]
+	(No symbol) [0x00007FF7A15B926E]
+	(No symbol) [0x00007FF7A15B955C]
+	(No symbol) [0x00007FF7A16027D7]
+	(No symbol) [0x00007FF7A15DF3AF]
+	(No symbol) [0x00007FF7A15FF584]
+	(No symbol) [0x00007FF7A15DF113]
+	(No symbol) [0x00007FF7A15AA918]
+	(No symbol) [0x00007FF7A15ABA81]
+	GetHandleVerifier [0x00007FF7A1A96A2D+3379789]
+	GetHandleVerifier [0x00007FF7A1AAC32D+3468109]
+	GetHandleVerifier [0x00007FF7A1AA0043+3418211]
+	GetHandleVerifier [0x00007FF7A182C78B+847787]
+	(No symbol) [0x00007FF7A16D757F]
+	(No symbol) [0x00007FF7A16D2FC4]
+	(No symbol) [0x00007FF7A16D315D]
+	(No symbol) [0x00007FF7A16C2979]
+	BaseThreadInitThunk [0x00007FF95786259D+29]
+	RtlUserThreadStart [0x00007FF95934AF38+40]
+
+2025-01-16 01:02:49,436 - WARNING - Could not complete ticket quantity/type steps.
+2025-01-16 01:02:49,515 - INFO - Reached MAX_EVENTS limit; stopping event processing.
+2025-01-16 01:02:49,515 - INFO - Writing data to CSV: stubhub_output.csv
+2025-01-16 01:02:49,538 - INFO - Wrote 477 rows to CSV: stubhub_output.csv
+2025-01-16 01:02:49,540 - INFO - Closing browser.
+2025-01-16 01:02:53,203 - INFO - === StubHub Scraper Finished ===
